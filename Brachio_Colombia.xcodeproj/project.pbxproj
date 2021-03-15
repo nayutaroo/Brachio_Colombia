@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B5EF7A990637BD1FC921302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */; };
 		1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9622EB1E7CFDC048968AC /* Main.storyboard */; };
 		4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31AE1A8A7B5647BE156E8 /* LaunchScreen.storyboard */; };
 		5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19379A11AAD8481E8C1688B /* Assets.xcassets */; };
+		6A980C8125FF58A40021FE41 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */; };
+		6A980C8225FF58A50021FE41 /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8025FF58A40021FE41 /* GroupListViewController.xib */; };
+		6A980C8825FF58CE0021FE41 /* ProfileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */; };
+		6A980C8925FF58CE0021FE41 /* ProfileListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */; };
+		6A980C8F25FF59440021FE41 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C8D25FF59440021FE41 /* DetailViewController.swift */; };
+		6A980C9025FF59440021FE41 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8E25FF59440021FE41 /* DetailViewController.xib */; };
+		6A980C9925FF595C0021FE41 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */; };
+		6A980C9A25FF595C0021FE41 /* AddGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */; };
+		6A980CA025FF59780021FE41 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */; };
+		6A980CA125FF59780021FE41 /* AddProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */; };
 		71A0FCAF130914976FD25476 /* Brachio_ColombiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */; };
 		754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */; };
 		798C860EAFA6FF64A315A784 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */; };
@@ -18,7 +27,6 @@
 		B017B585E7D7B06E69B0F67D /* Pods_Brachio_Colombia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */; };
 		BA581D49B10C420A9C33739C /* Pods_Brachio_ColombiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */; };
 		EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */; };
-		F9F2935B5F56176552E3AFDE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,16 @@
 		482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		64C9570B9FE3CDF259CB8F30 /* Brachio_ColombiaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF9483B765E5EE8D5772B5 /* Brachio_ColombiaTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		6A980C8025FF58A40021FE41 /* GroupListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
+		6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListViewController.swift; sourceTree = "<group>"; };
+		6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListViewController.xib; sourceTree = "<group>"; };
+		6A980C8D25FF59440021FE41 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6A980C8E25FF59440021FE41 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGroupViewController.xib; sourceTree = "<group>"; };
+		6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
+		6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProfileViewController.xib; sourceTree = "<group>"; };
 		76218EE8E4B776E077D42151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaUITests.swift; sourceTree = "<group>"; };
 		BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,13 +74,11 @@
 		C0473A1753A120179A4B44CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.release.xcconfig"; sourceTree = "<group>"; };
-		D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D55198E0B8E8F40F093A62E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_ColombiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19379A11AAD8481E8C1688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,15 +127,6 @@
 			path = Brachio_Colombia;
 			sourceTree = "<group>";
 		};
-		27B6F127CCCBC2E1C90CDC16 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */,
-				F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		4F04EA19FFC5F4E1D497098E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +158,6 @@
 				E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */,
 				1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -199,7 +205,16 @@
 		C51ED1DB3DD0995D516EDD05 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				27B6F127CCCBC2E1C90CDC16 /* Home */,
+				6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */,
+				6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */,
+				6A980C8D25FF59440021FE41 /* DetailViewController.swift */,
+				6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */,
+				6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */,
+				6A980C8025FF58A40021FE41 /* GroupListViewController.xib */,
+				6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */,
+				6A980C8E25FF59440021FE41 /* DetailViewController.xib */,
+				6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */,
+				6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,9 +316,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A980C8925FF58CE0021FE41 /* ProfileListViewController.xib in Resources */,
+				6A980C9025FF59440021FE41 /* DetailViewController.xib in Resources */,
+				6A980C8225FF58A50021FE41 /* GroupListViewController.xib in Resources */,
 				5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */,
-				F9F2935B5F56176552E3AFDE /* HomeViewController.xib in Resources */,
+				6A980C9A25FF595C0021FE41 /* AddGroupViewController.xib in Resources */,
 				4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */,
+				6A980CA125FF59780021FE41 /* AddProfileViewController.xib in Resources */,
 				1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +445,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A980C8125FF58A40021FE41 /* GroupListViewController.swift in Sources */,
 				EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */,
-				1B5EF7A990637BD1FC921302 /* HomeViewController.swift in Sources */,
+				6A980C8F25FF59440021FE41 /* DetailViewController.swift in Sources */,
+				6A980CA025FF59780021FE41 /* AddProfileViewController.swift in Sources */,
+				6A980C8825FF58CE0021FE41 /* ProfileListViewController.swift in Sources */,
+				6A980C9925FF595C0021FE41 /* AddGroupViewController.swift in Sources */,
 				754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
