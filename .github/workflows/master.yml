@@ -1,12 +1,12 @@
-name: main
+name: master
 
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -41,3 +41,5 @@ jobs:
       run: bundle exec pod install
     - name: Build App
       run: xcodebuild -sdk iphonesimulator -scheme Brachio_Colombia -workspace Brachio_Colombia.xcworkspace
+
+
