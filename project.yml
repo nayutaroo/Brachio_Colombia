@@ -6,7 +6,7 @@ targets:
     deploymentTarget: "13.0"
     sources: Brachio_Colombia
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: Tech-Nayuta.Brachio_Colombia
+      PRODUCT_BUNDLE_IDENTIFIER: Tech-Nayuta.BrachioColombia
   Brachio_ColombiaTests:
     type: bundle.unit-test
     platform: iOS
