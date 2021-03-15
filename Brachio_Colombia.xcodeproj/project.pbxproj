@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0927196FB0E7E43EDAD23B6E /* Pods_Brachio_ColombiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F08DC54C7E5F84564B6D74A /* Pods_Brachio_ColombiaTests.framework */; };
+		1B5EF7A990637BD1FC921302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */; };
 		1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9622EB1E7CFDC048968AC /* Main.storyboard */; };
-		23A5BA382F01A3090A39EE1A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E808D8943A580F4F4BFA8 /* HomeViewController.swift */; };
-		3B3D0237DA2EA50FF993DE3F /* Pods_Brachio_Colombia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534C4C2E464E812AFD3CDA2E /* Pods_Brachio_Colombia.framework */; };
 		4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31AE1A8A7B5647BE156E8 /* LaunchScreen.storyboard */; };
 		5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19379A11AAD8481E8C1688B /* Assets.xcassets */; };
 		71A0FCAF130914976FD25476 /* Brachio_ColombiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */; };
+		754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */; };
+		798C860EAFA6FF64A315A784 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */; };
 		ABBE325344427B386991486C /* Brachio_ColombiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD4DD2EF4974930CF26087 /* Brachio_ColombiaTests.swift */; };
-		B17A7BC4645F50F20E87EA46 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DB0D06BB1EF89FBC6EF742 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */; };
-		D022373D3133DF9488E40AEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4120BA734107B5A20AF5EEDE /* SceneDelegate.swift */; };
-		D2975D3294E3DE943EF59B39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD13E02DE444458B243FA4 /* AppDelegate.swift */; };
-		F63617BBFA8A763E67D17186 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9D377F25ADC869434565B7 /* HomeViewController.xib */; };
+		B017B585E7D7B06E69B0F67D /* Pods_Brachio_Colombia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */; };
+		BA581D49B10C420A9C33739C /* Pods_Brachio_ColombiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */; };
+		EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */; };
+		F9F2935B5F56176552E3AFDE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,53 +40,53 @@
 
 /* Begin PBXFileReference section */
 		05BD4DD2EF4974930CF26087 /* Brachio_ColombiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaTests.swift; sourceTree = "<group>"; };
+		0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8DF118241697A8CB2E0DFC /* Brachio_Colombia.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Brachio_Colombia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		108370295474B9D959863EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1692E9F80DFA5661C84092F2 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1FDD13E02DE444458B243FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33F0286ED89F3ACFDB628C73 /* Pods-Brachio_Colombia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.release.xcconfig"; sourceTree = "<group>"; };
-		39A6A5C803F508B340D247DA /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4120BA734107B5A20AF5EEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		534C4C2E464E812AFD3CDA2E /* Pods_Brachio_Colombia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		555506B9379FD3B3457FC3F5 /* Pods-Brachio_ColombiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		64C9570B9FE3CDF259CB8F30 /* Brachio_ColombiaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF9483B765E5EE8D5772B5 /* Brachio_ColombiaTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		71DB0D06BB1EF89FBC6EF742 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		752F8C376793D3F7ED98C379 /* Pods-Brachio_ColombiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		76218EE8E4B776E077D42151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		852BEC3D25E3154ECC6841BD /* Pods-Brachio_Colombia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.debug.xcconfig"; sourceTree = "<group>"; };
-		8D9D377F25ADC869434565B7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		9D4E808D8943A580F4F4BFA8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9F08DC54C7E5F84564B6D74A /* Pods_Brachio_ColombiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_ColombiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaUITests.swift; sourceTree = "<group>"; };
+		BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC752A18F348A44C58429DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C0473A1753A120179A4B44CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.release.xcconfig"; sourceTree = "<group>"; };
+		D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D55198E0B8E8F40F093A62E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_ColombiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19379A11AAD8481E8C1688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20759BCB91B4199DCC28CB65 /* Frameworks */ = {
+		2261148248AB6DFD3DF8CD7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3D0237DA2EA50FF993DE3F /* Pods_Brachio_Colombia.framework in Frameworks */,
+				BA581D49B10C420A9C33739C /* Pods_Brachio_ColombiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		431544D982B188AFF0E58EEC /* Frameworks */ = {
+		7BAC009850AEFA05BCC88549 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0927196FB0E7E43EDAD23B6E /* Pods_Brachio_ColombiaTests.framework in Frameworks */,
+				B017B585E7D7B06E69B0F67D /* Pods_Brachio_Colombia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D06FB55E3BD090E7C8A91EF2 /* Frameworks */ = {
+		88AA5CB08CD354FD45874143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17A7BC4645F50F20E87EA46 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */,
+				798C860EAFA6FF64A315A784 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,27 +111,13 @@
 			path = Brachio_Colombia;
 			sourceTree = "<group>";
 		};
-		4085AAAC1FDE8330F402A52D /* Pods */ = {
+		27B6F127CCCBC2E1C90CDC16 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				852BEC3D25E3154ECC6841BD /* Pods-Brachio_Colombia.debug.xcconfig */,
-				33F0286ED89F3ACFDB628C73 /* Pods-Brachio_Colombia.release.xcconfig */,
-				39A6A5C803F508B340D247DA /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */,
-				1692E9F80DFA5661C84092F2 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */,
-				752F8C376793D3F7ED98C379 /* Pods-Brachio_ColombiaTests.debug.xcconfig */,
-				555506B9379FD3B3457FC3F5 /* Pods-Brachio_ColombiaTests.release.xcconfig */,
+				D4A450589DFCD6C0DE3C4113 /* HomeViewController.swift */,
+				F82F9A3F119A7147A52ACD7A /* HomeViewController.xib */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4C726814603234D7B9ED8500 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				534C4C2E464E812AFD3CDA2E /* Pods_Brachio_Colombia.framework */,
-				71DB0D06BB1EF89FBC6EF742 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */,
-				9F08DC54C7E5F84564B6D74A /* Pods_Brachio_ColombiaTests.framework */,
-			);
-			name = Frameworks;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4F04EA19FFC5F4E1D497098E /* Resources */ = {
@@ -148,18 +134,25 @@
 		62FD77BEA30F311346C7CF6C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1FDD13E02DE444458B243FA4 /* AppDelegate.swift */,
-				4120BA734107B5A20AF5EEDE /* SceneDelegate.swift */,
-				D7797F5E25FEF0D6006B7B7E /* Repository */,
-				D7797F5D25FEF0CC006B7B7E /* DB */,
-				D7797F5C25FEF0C7006B7B7E /* APIClient */,
-				D7797F5B25FEF0C1006B7B7E /* Extension */,
-				D7797F5A25FEF0B4006B7B7E /* Router */,
-				D7797F5925FEF0AE006B7B7E /* Utility */,
-				D7797F5625FEF053006B7B7E /* ViewModel */,
-				D7797F5525FEF049006B7B7E /* View */,
+				DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */,
+				3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */,
+				C51ED1DB3DD0995D516EDD05 /* View */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		636D39961DC5797E717A9769 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */,
+				CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */,
+				327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */,
+				482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */,
+				E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */,
+				1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		86D5C58A5531563FAF04A179 = {
@@ -169,9 +162,19 @@
 				B7B3A66DFE33E66ECDF4DA2B /* Brachio_ColombiaTests */,
 				062A245D87A7778881CCCA98 /* Brachio_ColombiaUITests */,
 				AD36907E6B191AFDC07A75F6 /* Products */,
-				4085AAAC1FDE8330F402A52D /* Pods */,
-				4C726814603234D7B9ED8500 /* Frameworks */,
+				636D39961DC5797E717A9769 /* Pods */,
+				A516BC30E14CAE350B5F7E91 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		A516BC30E14CAE350B5F7E91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */,
+				0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */,
+				E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AD36907E6B191AFDC07A75F6 /* Products */ = {
@@ -193,78 +196,12 @@
 			path = Brachio_ColombiaTests;
 			sourceTree = "<group>";
 		};
-		D7797F5525FEF049006B7B7E /* View */ = {
+		C51ED1DB3DD0995D516EDD05 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7797F5825FEF070006B7B7E /* Common */,
-				D7797F5725FEF060006B7B7E /* Home */,
+				27B6F127CCCBC2E1C90CDC16 /* Home */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D7797F5625FEF053006B7B7E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		D7797F5725FEF060006B7B7E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				9D4E808D8943A580F4F4BFA8 /* HomeViewController.swift */,
-				8D9D377F25ADC869434565B7 /* HomeViewController.xib */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D7797F5825FEF070006B7B7E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		D7797F5925FEF0AE006B7B7E /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		D7797F5A25FEF0B4006B7B7E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		D7797F5B25FEF0C1006B7B7E /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		D7797F5C25FEF0C7006B7B7E /* APIClient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIClient;
-			sourceTree = "<group>";
-		};
-		D7797F5D25FEF0CC006B7B7E /* DB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DB;
-			sourceTree = "<group>";
-		};
-		D7797F5E25FEF0D6006B7B7E /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,11 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0DE3ECFB7BAC928E1E77FAD /* Build configuration list for PBXNativeTarget "Brachio_Colombia" */;
 			buildPhases = (
-				CD800CD48CC050C913EA1B36 /* [CP] Check Pods Manifest.lock */,
+				0D10975F48C8C1B9C65CEE89 /* [CP] Check Pods Manifest.lock */,
 				4FF09D6B69CA769E45B310A9 /* Sources */,
 				6CCEE12523411D1F4DBB51C2 /* Resources */,
-				20759BCB91B4199DCC28CB65 /* Frameworks */,
-				AA7C5ED5B3F526DDF0A72695 /* [CP] Embed Pods Frameworks */,
+				7BAC009850AEFA05BCC88549 /* Frameworks */,
+				A413ECC9E35F9E99DD56241E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,10 +230,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3B90904D1CE12DDB2E44799 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaUITests" */;
 			buildPhases = (
-				E62E54ECC4E4707D380B893D /* [CP] Check Pods Manifest.lock */,
+				11922DCEFC740ED2E8894241 /* [CP] Check Pods Manifest.lock */,
 				5BA4A67D66D438E9038EF20D /* Sources */,
-				D06FB55E3BD090E7C8A91EF2 /* Frameworks */,
-				9FFE49FF8F54FF5D57866D9D /* [CP] Embed Pods Frameworks */,
+				88AA5CB08CD354FD45874143 /* Frameworks */,
+				0D208BBDA199BDDA0F9C4846 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,9 +249,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25BD8DACE28FA7669902E6C /* Build configuration list for PBXNativeTarget "Brachio_ColombiaTests" */;
 			buildPhases = (
-				859D27E9F444817CE948A1B0 /* [CP] Check Pods Manifest.lock */,
+				0C78EAECBBB3ECD45AF69268 /* [CP] Check Pods Manifest.lock */,
 				34D9DC8AF811891D292E7E58 /* Sources */,
-				431544D982B188AFF0E58EEC /* Frameworks */,
+				2261148248AB6DFD3DF8CD7D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */,
-				F63617BBFA8A763E67D17186 /* HomeViewController.xib in Resources */,
+				F9F2935B5F56176552E3AFDE /* HomeViewController.xib in Resources */,
 				4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */,
 				1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */,
 			);
@@ -374,7 +311,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		859D27E9F444817CE948A1B0 /* [CP] Check Pods Manifest.lock */ = {
+		0C78EAECBBB3ECD45AF69268 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,41 +333,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9FFE49FF8F54FF5D57866D9D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA7C5ED5B3F526DDF0A72695 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD800CD48CC050C913EA1B36 /* [CP] Check Pods Manifest.lock */ = {
+		0D10975F48C8C1B9C65CEE89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,7 +355,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E62E54ECC4E4707D380B893D /* [CP] Check Pods Manifest.lock */ = {
+		0D208BBDA199BDDA0F9C4846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11922DCEFC740ED2E8894241 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,6 +394,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A413ECC9E35F9E99DD56241E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -489,9 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2975D3294E3DE943EF59B39 /* AppDelegate.swift in Sources */,
-				23A5BA382F01A3090A39EE1A /* HomeViewController.swift in Sources */,
-				D022373D3133DF9488E40AEC /* SceneDelegate.swift in Sources */,
+				EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */,
+				1B5EF7A990637BD1FC921302 /* HomeViewController.swift in Sources */,
+				754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +539,7 @@
 		};
 		255F67622AE750350E57A3B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33F0286ED89F3ACFDB628C73 /* Pods-Brachio_Colombia.release.xcconfig */;
+			baseConfigurationReference = CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -620,7 +557,7 @@
 		};
 		4E87AE6492A4CA15442D9CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39A6A5C803F508B340D247DA /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */;
+			baseConfigurationReference = 327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
@@ -693,7 +630,7 @@
 		};
 		7CA616669D050F0F5E28AC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 555506B9379FD3B3457FC3F5 /* Pods-Brachio_ColombiaTests.release.xcconfig */;
+			baseConfigurationReference = 1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
@@ -711,7 +648,7 @@
 		};
 		C07607867EA0F55FFF0E8DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1692E9F80DFA5661C84092F2 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */;
+			baseConfigurationReference = 482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
@@ -729,7 +666,7 @@
 		};
 		C17BF5B7883B85B90629EF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 752F8C376793D3F7ED98C379 /* Pods-Brachio_ColombiaTests.debug.xcconfig */;
+			baseConfigurationReference = E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
@@ -747,7 +684,7 @@
 		};
 		F5DBA5619E3C3B6217390B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 852BEC3D25E3154ECC6841BD /* Pods-Brachio_Colombia.debug.xcconfig */;
+			baseConfigurationReference = BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
