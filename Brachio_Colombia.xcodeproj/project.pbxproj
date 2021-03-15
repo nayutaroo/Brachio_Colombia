@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D79872F525FEDCAA00890047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79872F425FEDCAA00890047 /* AppDelegate.swift */; };
+		D79872F725FEDCAA00890047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79872F625FEDCAA00890047 /* SceneDelegate.swift */; };
+		D79872F925FEDCAA00890047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79872F825FEDCAA00890047 /* ViewController.swift */; };
+		D79872FC25FEDCAA00890047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79872FA25FEDCAA00890047 /* Main.storyboard */; };
+		D79872FE25FEDCAF00890047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79872FD25FEDCAF00890047 /* Assets.xcassets */; };
+		D798730125FEDCAF00890047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79872FF25FEDCAF00890047 /* LaunchScreen.storyboard */; };
+		D798730C25FEDCAF00890047 /* Brachio_ColombiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798730B25FEDCAF00890047 /* Brachio_ColombiaTests.swift */; };
+		D798731725FEDCAF00890047 /* Brachio_ColombiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798731625FEDCAF00890047 /* Brachio_ColombiaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D798730825FEDCAF00890047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D79872E925FEDCAA00890047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D79872F025FEDCAA00890047;
+			remoteInfo = Brachio_Colombia;
+		};
+		D798731325FEDCAF00890047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D79872E925FEDCAA00890047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D79872F025FEDCAA00890047;
+			remoteInfo = Brachio_Colombia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D79872F125FEDCAA00890047 /* Brachio_Colombia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brachio_Colombia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79872F425FEDCAA00890047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D79872F625FEDCAA00890047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D79872F825FEDCAA00890047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D79872FB25FEDCAA00890047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D79872FD25FEDCAF00890047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D798730025FEDCAF00890047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D798730225FEDCAF00890047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D798730725FEDCAF00890047 /* Brachio_ColombiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Brachio_ColombiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D798730B25FEDCAF00890047 /* Brachio_ColombiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaTests.swift; sourceTree = "<group>"; };
+		D798730D25FEDCAF00890047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D798731225FEDCAF00890047 /* Brachio_ColombiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Brachio_ColombiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D798731625FEDCAF00890047 /* Brachio_ColombiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaUITests.swift; sourceTree = "<group>"; };
+		D798731825FEDCAF00890047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79872EE25FEDCAA00890047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798730425FEDCAF00890047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798730F25FEDCAF00890047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D79872E825FEDCAA00890047 = {
+			isa = PBXGroup;
+			children = (
+				D79872F325FEDCAA00890047 /* Brachio_Colombia */,
+				D798730A25FEDCAF00890047 /* Brachio_ColombiaTests */,
+				D798731525FEDCAF00890047 /* Brachio_ColombiaUITests */,
+				D79872F225FEDCAA00890047 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D79872F225FEDCAA00890047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79872F125FEDCAA00890047 /* Brachio_Colombia.app */,
+				D798730725FEDCAF00890047 /* Brachio_ColombiaTests.xctest */,
+				D798731225FEDCAF00890047 /* Brachio_ColombiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79872F325FEDCAA00890047 /* Brachio_Colombia */ = {
+			isa = PBXGroup;
+			children = (
+				D79872F425FEDCAA00890047 /* AppDelegate.swift */,
+				D79872F625FEDCAA00890047 /* SceneDelegate.swift */,
+				D79872F825FEDCAA00890047 /* ViewController.swift */,
+				D79872FA25FEDCAA00890047 /* Main.storyboard */,
+				D79872FD25FEDCAF00890047 /* Assets.xcassets */,
+				D79872FF25FEDCAF00890047 /* LaunchScreen.storyboard */,
+				D798730225FEDCAF00890047 /* Info.plist */,
+			);
+			path = Brachio_Colombia;
+			sourceTree = "<group>";
+		};
+		D798730A25FEDCAF00890047 /* Brachio_ColombiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D798730B25FEDCAF00890047 /* Brachio_ColombiaTests.swift */,
+				D798730D25FEDCAF00890047 /* Info.plist */,
+			);
+			path = Brachio_ColombiaTests;
+			sourceTree = "<group>";
+		};
+		D798731525FEDCAF00890047 /* Brachio_ColombiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D798731625FEDCAF00890047 /* Brachio_ColombiaUITests.swift */,
+				D798731825FEDCAF00890047 /* Info.plist */,
+			);
+			path = Brachio_ColombiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79872F025FEDCAA00890047 /* Brachio_Colombia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D798731B25FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_Colombia" */;
+			buildPhases = (
+				D79872ED25FEDCAA00890047 /* Sources */,
+				D79872EE25FEDCAA00890047 /* Frameworks */,
+				D79872EF25FEDCAA00890047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brachio_Colombia;
+			productName = Brachio_Colombia;
+			productReference = D79872F125FEDCAA00890047 /* Brachio_Colombia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D798730625FEDCAF00890047 /* Brachio_ColombiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D798731E25FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaTests" */;
+			buildPhases = (
+				D798730325FEDCAF00890047 /* Sources */,
+				D798730425FEDCAF00890047 /* Frameworks */,
+				D798730525FEDCAF00890047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D798730925FEDCAF00890047 /* PBXTargetDependency */,
+			);
+			name = Brachio_ColombiaTests;
+			productName = Brachio_ColombiaTests;
+			productReference = D798730725FEDCAF00890047 /* Brachio_ColombiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D798731125FEDCAF00890047 /* Brachio_ColombiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D798732125FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaUITests" */;
+			buildPhases = (
+				D798730E25FEDCAF00890047 /* Sources */,
+				D798730F25FEDCAF00890047 /* Frameworks */,
+				D798731025FEDCAF00890047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D798731425FEDCAF00890047 /* PBXTargetDependency */,
+			);
+			name = Brachio_ColombiaUITests;
+			productName = Brachio_ColombiaUITests;
+			productReference = D798731225FEDCAF00890047 /* Brachio_ColombiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79872E925FEDCAA00890047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					D79872F025FEDCAA00890047 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D798730625FEDCAF00890047 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D79872F025FEDCAA00890047;
+					};
+					D798731125FEDCAF00890047 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D79872F025FEDCAA00890047;
+					};
+				};
+			};
+			buildConfigurationList = D79872EC25FEDCAA00890047 /* Build configuration list for PBXProject "Brachio_Colombia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79872E825FEDCAA00890047;
+			productRefGroup = D79872F225FEDCAA00890047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79872F025FEDCAA00890047 /* Brachio_Colombia */,
+				D798730625FEDCAF00890047 /* Brachio_ColombiaTests */,
+				D798731125FEDCAF00890047 /* Brachio_ColombiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79872EF25FEDCAA00890047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D798730125FEDCAF00890047 /* LaunchScreen.storyboard in Resources */,
+				D79872FE25FEDCAF00890047 /* Assets.xcassets in Resources */,
+				D79872FC25FEDCAA00890047 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798730525FEDCAF00890047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798731025FEDCAF00890047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79872ED25FEDCAA00890047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79872F925FEDCAA00890047 /* ViewController.swift in Sources */,
+				D79872F525FEDCAA00890047 /* AppDelegate.swift in Sources */,
+				D79872F725FEDCAA00890047 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798730325FEDCAF00890047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D798730C25FEDCAF00890047 /* Brachio_ColombiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D798730E25FEDCAF00890047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D798731725FEDCAF00890047 /* Brachio_ColombiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D798730925FEDCAF00890047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D79872F025FEDCAA00890047 /* Brachio_Colombia */;
+			targetProxy = D798730825FEDCAF00890047 /* PBXContainerItemProxy */;
+		};
+		D798731425FEDCAF00890047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D79872F025FEDCAA00890047 /* Brachio_Colombia */;
+			targetProxy = D798731325FEDCAF00890047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D79872FA25FEDCAA00890047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79872FB25FEDCAA00890047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D79872FF25FEDCAF00890047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D798730025FEDCAF00890047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D798731925FEDCAF00890047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D798731A25FEDCAF00890047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D798731C25FEDCAF00890047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_Colombia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-Colombia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D798731D25FEDCAF00890047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_Colombia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-Colombia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D798731F25FEDCAF00890047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-ColombiaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brachio_Colombia.app/Brachio_Colombia";
+			};
+			name = Debug;
+		};
+		D798732025FEDCAF00890047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-ColombiaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brachio_Colombia.app/Brachio_Colombia";
+			};
+			name = Release;
+		};
+		D798732225FEDCAF00890047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-ColombiaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brachio_Colombia;
+			};
+			name = Debug;
+		};
+		D798732325FEDCAF00890047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kohei-Keta.Brachio-ColombiaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brachio_Colombia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79872EC25FEDCAA00890047 /* Build configuration list for PBXProject "Brachio_Colombia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D798731925FEDCAF00890047 /* Debug */,
+				D798731A25FEDCAF00890047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D798731B25FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_Colombia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D798731C25FEDCAF00890047 /* Debug */,
+				D798731D25FEDCAF00890047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D798731E25FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D798731F25FEDCAF00890047 /* Debug */,
+				D798732025FEDCAF00890047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D798732125FEDCAF00890047 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D798732225FEDCAF00890047 /* Debug */,
+				D798732325FEDCAF00890047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D79872E925FEDCAA00890047 /* Project object */;
+}
