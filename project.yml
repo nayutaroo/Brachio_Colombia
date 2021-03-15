@@ -1,0 +1,25 @@
+name: Brachio_Colombia
+targets:
+  Brachio_Colombia:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: Brachio_Colombia
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: Tech-Nayuta.Brachio_Colombia
+  Brachio_ColombiaTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: Brachio_ColombiaTests
+    dependencies:
+      - target: Brachio_Colombia
+  Brachio_ColombiaUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: Brachio_ColombiaUITests
+    dependencies:
+      - target: Brachio_Colombia
+
+

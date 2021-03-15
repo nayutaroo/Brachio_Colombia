@@ -1,0 +1,43 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: xavierLowmiller/xcodegen-action@1.1.1
+      with:
+        spec: project.yml
+        quiet: true
+        version: '2.15.1'
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - uses: actions/cache@v2
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.1
+    - name: XcodeGen
+      run: xcodegen generate
+    - name: Bundle install
+      run: bundle
+    - name: Cocoapods install
+      run: bundle exec pod install
+    - name: Build App
+      run: xcodebuild -sdk iphonesimulator -scheme Brachio_Colombia -workspace Brachio_Colombia.xcworkspace
