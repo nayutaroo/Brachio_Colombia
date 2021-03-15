@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D647DE7A41D02CF89C41A84 /* Pods_Brachio_ColombiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437E907BF65AF77DACF65D5C /* Pods_Brachio_ColombiaTests.framework */; };
 		1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9622EB1E7CFDC048968AC /* Main.storyboard */; };
 		4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31AE1A8A7B5647BE156E8 /* LaunchScreen.storyboard */; };
+		56B96234ADABF11A5CA57172 /* AddGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62A1CD191FD63D9221C5A8C /* AddGroupViewController.xib */; };
 		5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19379A11AAD8481E8C1688B /* Assets.xcassets */; };
-		6A980C8125FF58A40021FE41 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */; };
-		6A980C8225FF58A50021FE41 /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8025FF58A40021FE41 /* GroupListViewController.xib */; };
-		6A980C8825FF58CE0021FE41 /* ProfileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */; };
-		6A980C8925FF58CE0021FE41 /* ProfileListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */; };
-		6A980C8F25FF59440021FE41 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C8D25FF59440021FE41 /* DetailViewController.swift */; };
-		6A980C9025FF59440021FE41 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C8E25FF59440021FE41 /* DetailViewController.xib */; };
-		6A980C9925FF595C0021FE41 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */; };
-		6A980C9A25FF595C0021FE41 /* AddGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */; };
-		6A980CA025FF59780021FE41 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */; };
-		6A980CA125FF59780021FE41 /* AddProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */; };
 		71A0FCAF130914976FD25476 /* Brachio_ColombiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */; };
 		754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */; };
-		798C860EAFA6FF64A315A784 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */; };
+		76F84060E53B24C0E968950C /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A81A80F9CDEC6A7EB20D8 /* AddGroupViewController.swift */; };
+		83C8328EF416CAA09C722971 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB159B187B077A71F0DAAB6E /* GroupListViewController.swift */; };
+		85043C8DBDAE42DB8D984392 /* ProfileListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1492A2B7C172511FCF07C3C0 /* ProfileListViewController.xib */; };
+		8504D482DE55B773E5F0ABF7 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BFA5E24AF336D9285FF765 /* AddProfileViewController.swift */; };
+		8A388EDDD31695E8C140177D /* ProfileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F4BEDB0B829D2CDA662F7 /* ProfileListViewController.swift */; };
 		ABBE325344427B386991486C /* Brachio_ColombiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD4DD2EF4974930CF26087 /* Brachio_ColombiaTests.swift */; };
-		B017B585E7D7B06E69B0F67D /* Pods_Brachio_Colombia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */; };
-		BA581D49B10C420A9C33739C /* Pods_Brachio_ColombiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */; };
+		B6B6F050ACB67BE79AEDD574 /* Pods_Brachio_Colombia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DDD32478CDBABCC026C61A /* Pods_Brachio_Colombia.framework */; };
+		BDF1B8499750C20F7D36658D /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD413CF4AF25006A2173977 /* GroupListViewController.xib */; };
+		BEDE73C655BC16B3F4FA3E40 /* AddProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB1FFA94AE5B495D9C8C33B /* AddProfileViewController.xib */; };
+		BFF7DB1363EB33CC48602B08 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6A70B86012907AE90D596 /* DetailViewController.swift */; };
+		D0B3C823FF11BF0C44EDE298 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE7791B86FC4333F8D6E7A /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */; };
+		D7797F8225FF6193006B7B7E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7797F8125FF6193006B7B7E /* UIView+.swift */; };
+		D7797F8A25FF63C9006B7B7E /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7797F8925FF63C9006B7B7E /* CollectionView+.swift */; };
+		D7797F9025FF6420006B7B7E /* ProfileListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7797F8E25FF6420006B7B7E /* ProfileListCollectionViewCell.swift */; };
+		D7797F9125FF6420006B7B7E /* ProfileListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7797F8F25FF6420006B7B7E /* ProfileListCollectionViewCell.xib */; };
 		EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */; };
+		F64C02A1D3AF241E60A9DA48 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A52BBECD3679C152F6A851 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,61 +52,65 @@
 
 /* Begin PBXFileReference section */
 		05BD4DD2EF4974930CF26087 /* Brachio_ColombiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaTests.swift; sourceTree = "<group>"; };
-		0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D9C1269D16385DDCB2A92FD /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0F8DF118241697A8CB2E0DFC /* Brachio_Colombia.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Brachio_Colombia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		108370295474B9D959863EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.release.xcconfig"; sourceTree = "<group>"; };
-		327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1492A2B7C172511FCF07C3C0 /* ProfileListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListViewController.xib; sourceTree = "<group>"; };
 		3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		345F4BEDB0B829D2CDA662F7 /* ProfileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListViewController.swift; sourceTree = "<group>"; };
+		3AD413CF4AF25006A2173977 /* GroupListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
+		3FFE7791B86FC4333F8D6E7A /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437E907BF65AF77DACF65D5C /* Pods_Brachio_ColombiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_ColombiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495A81A80F9CDEC6A7EB20D8 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		52DDD32478CDBABCC026C61A /* Pods_Brachio_Colombia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C9570B9FE3CDF259CB8F30 /* Brachio_ColombiaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CF9483B765E5EE8D5772B5 /* Brachio_ColombiaTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Brachio_ColombiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
-		6A980C8025FF58A40021FE41 /* GroupListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
-		6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListViewController.swift; sourceTree = "<group>"; };
-		6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListViewController.xib; sourceTree = "<group>"; };
-		6A980C8D25FF59440021FE41 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		6A980C8E25FF59440021FE41 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
-		6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGroupViewController.xib; sourceTree = "<group>"; };
-		6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
-		6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProfileViewController.xib; sourceTree = "<group>"; };
+		69D52CE22307F23740D2F440 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AA6A70B86012907AE90D596 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		76218EE8E4B776E077D42151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D7E9EB597917507A55502B4 /* Pods-Brachio_ColombiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DFBD38B39A872FF134B1C4A /* Pods-Brachio_Colombia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.debug.xcconfig"; sourceTree = "<group>"; };
+		87BFA5E24AF336D9285FF765 /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
+		97D4ECE641F81B9BF55A4199 /* Pods-Brachio_ColombiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A56164A0EFA0B96CBDFAB629 /* Brachio_ColombiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaUITests.swift; sourceTree = "<group>"; };
-		BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.debug.xcconfig"; sourceTree = "<group>"; };
+		AB159B187B077A71F0DAAB6E /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		ABB1FFA94AE5B495D9C8C33B /* AddProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProfileViewController.xib; sourceTree = "<group>"; };
+		ABE967F3D9259B52BE20CC76 /* Pods-Brachio_Colombia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.release.xcconfig"; sourceTree = "<group>"; };
+		B6A52BBECD3679C152F6A851 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		BFC752A18F348A44C58429DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C0473A1753A120179A4B44CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia.release.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia.release.xcconfig"; sourceTree = "<group>"; };
+		C62A1CD191FD63D9221C5A8C /* AddGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGroupViewController.xib; sourceTree = "<group>"; };
 		D55198E0B8E8F40F093A62E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7797F8125FF6193006B7B7E /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		D7797F8925FF63C9006B7B7E /* CollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
+		D7797F8E25FF6420006B7B7E /* ProfileListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7797F8F25FF6420006B7B7E /* ProfileListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileListCollectionViewCell.xib; sourceTree = "<group>"; };
 		DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_ColombiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19379A11AAD8481E8C1688B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2261148248AB6DFD3DF8CD7D /* Frameworks */ = {
+		C3685C1A47540BAD00F2CADB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA581D49B10C420A9C33739C /* Pods_Brachio_ColombiaTests.framework in Frameworks */,
+				D0B3C823FF11BF0C44EDE298 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BAC009850AEFA05BCC88549 /* Frameworks */ = {
+		C5B133EB0AA577B63F984A72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B017B585E7D7B06E69B0F67D /* Pods_Brachio_Colombia.framework in Frameworks */,
+				1D647DE7A41D02CF89C41A84 /* Pods_Brachio_ColombiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88AA5CB08CD354FD45874143 /* Frameworks */ = {
+		D75DF3AB912D6AE78C7DC1F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				798C860EAFA6FF64A315A784 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework in Frameworks */,
+				B6B6F050ACB67BE79AEDD574 /* Pods_Brachio_Colombia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,27 +146,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		52FB4E048C7929FC6F123E94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DFBD38B39A872FF134B1C4A /* Pods-Brachio_Colombia.debug.xcconfig */,
+				ABE967F3D9259B52BE20CC76 /* Pods-Brachio_Colombia.release.xcconfig */,
+				69D52CE22307F23740D2F440 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */,
+				0D9C1269D16385DDCB2A92FD /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */,
+				7D7E9EB597917507A55502B4 /* Pods-Brachio_ColombiaTests.debug.xcconfig */,
+				97D4ECE641F81B9BF55A4199 /* Pods-Brachio_ColombiaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		62FD77BEA30F311346C7CF6C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D7797F8025FF614E006B7B7E /* Extension */,
 				DF5B97A04FDDC761E0895B0C /* AppDelegate.swift */,
 				3394D6DA786161A8FB59AE69 /* SceneDelegate.swift */,
 				C51ED1DB3DD0995D516EDD05 /* View */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		636D39961DC5797E717A9769 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */,
-				CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */,
-				327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */,
-				482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */,
-				E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */,
-				1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		86D5C58A5531563FAF04A179 = {
@@ -168,19 +177,9 @@
 				B7B3A66DFE33E66ECDF4DA2B /* Brachio_ColombiaTests */,
 				062A245D87A7778881CCCA98 /* Brachio_ColombiaUITests */,
 				AD36907E6B191AFDC07A75F6 /* Products */,
-				636D39961DC5797E717A9769 /* Pods */,
-				A516BC30E14CAE350B5F7E91 /* Frameworks */,
+				52FB4E048C7929FC6F123E94 /* Pods */,
+				EF2ACD349B1F5FDAB454B8C6 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		A516BC30E14CAE350B5F7E91 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C6C20014529002DC0597CEB1 /* Pods_Brachio_Colombia.framework */,
-				0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */,
-				E8A480F20C13BD15E6F623F2 /* Pods_Brachio_ColombiaTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AD36907E6B191AFDC07A75F6 /* Products */ = {
@@ -205,18 +204,39 @@
 		C51ED1DB3DD0995D516EDD05 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6A980C7F25FF58A40021FE41 /* GroupListViewController.swift */,
-				6A980C8625FF58CE0021FE41 /* ProfileListViewController.swift */,
-				6A980C8D25FF59440021FE41 /* DetailViewController.swift */,
-				6A980C9725FF595C0021FE41 /* AddGroupViewController.swift */,
-				6A980C9E25FF59780021FE41 /* AddProfileViewController.swift */,
-				6A980C8025FF58A40021FE41 /* GroupListViewController.xib */,
-				6A980C8725FF58CE0021FE41 /* ProfileListViewController.xib */,
-				6A980C8E25FF59440021FE41 /* DetailViewController.xib */,
-				6A980C9825FF595C0021FE41 /* AddGroupViewController.xib */,
-				6A980C9F25FF59780021FE41 /* AddProfileViewController.xib */,
+				495A81A80F9CDEC6A7EB20D8 /* AddGroupViewController.swift */,
+				C62A1CD191FD63D9221C5A8C /* AddGroupViewController.xib */,
+				87BFA5E24AF336D9285FF765 /* AddProfileViewController.swift */,
+				ABB1FFA94AE5B495D9C8C33B /* AddProfileViewController.xib */,
+				6AA6A70B86012907AE90D596 /* DetailViewController.swift */,
+				B6A52BBECD3679C152F6A851 /* DetailViewController.xib */,
+				AB159B187B077A71F0DAAB6E /* GroupListViewController.swift */,
+				3AD413CF4AF25006A2173977 /* GroupListViewController.xib */,
+				345F4BEDB0B829D2CDA662F7 /* ProfileListViewController.swift */,
+				1492A2B7C172511FCF07C3C0 /* ProfileListViewController.xib */,
+				D7797F8E25FF6420006B7B7E /* ProfileListCollectionViewCell.swift */,
+				D7797F8F25FF6420006B7B7E /* ProfileListCollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D7797F8025FF614E006B7B7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D7797F8125FF6193006B7B7E /* UIView+.swift */,
+				D7797F8925FF63C9006B7B7E /* CollectionView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF2ACD349B1F5FDAB454B8C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52DDD32478CDBABCC026C61A /* Pods_Brachio_Colombia.framework */,
+				3FFE7791B86FC4333F8D6E7A /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */,
+				437E907BF65AF77DACF65D5C /* Pods_Brachio_ColombiaTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0DE3ECFB7BAC928E1E77FAD /* Build configuration list for PBXNativeTarget "Brachio_Colombia" */;
 			buildPhases = (
-				0D10975F48C8C1B9C65CEE89 /* [CP] Check Pods Manifest.lock */,
+				3AD24BC7E7F0CA3E3D25C0BE /* [CP] Check Pods Manifest.lock */,
 				4FF09D6B69CA769E45B310A9 /* Sources */,
 				6CCEE12523411D1F4DBB51C2 /* Resources */,
-				7BAC009850AEFA05BCC88549 /* Frameworks */,
-				A413ECC9E35F9E99DD56241E /* [CP] Embed Pods Frameworks */,
+				D75DF3AB912D6AE78C7DC1F0 /* Frameworks */,
+				4BC3FC614CC659F48ECCF910 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,10 +265,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3B90904D1CE12DDB2E44799 /* Build configuration list for PBXNativeTarget "Brachio_ColombiaUITests" */;
 			buildPhases = (
-				11922DCEFC740ED2E8894241 /* [CP] Check Pods Manifest.lock */,
+				1E93C610A3B599055A53FB53 /* [CP] Check Pods Manifest.lock */,
 				5BA4A67D66D438E9038EF20D /* Sources */,
-				88AA5CB08CD354FD45874143 /* Frameworks */,
-				0D208BBDA199BDDA0F9C4846 /* [CP] Embed Pods Frameworks */,
+				C3685C1A47540BAD00F2CADB /* Frameworks */,
+				DE6F5BAEFC22A101BB06A7A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,9 +284,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25BD8DACE28FA7669902E6C /* Build configuration list for PBXNativeTarget "Brachio_ColombiaTests" */;
 			buildPhases = (
-				0C78EAECBBB3ECD45AF69268 /* [CP] Check Pods Manifest.lock */,
+				B573152AB593B65D9F4FA30B /* [CP] Check Pods Manifest.lock */,
 				34D9DC8AF811891D292E7E58 /* Sources */,
-				2261148248AB6DFD3DF8CD7D /* Frameworks */,
+				C5B133EB0AA577B63F984A72 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,82 +336,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A980C8925FF58CE0021FE41 /* ProfileListViewController.xib in Resources */,
-				6A980C9025FF59440021FE41 /* DetailViewController.xib in Resources */,
-				6A980C8225FF58A50021FE41 /* GroupListViewController.xib in Resources */,
+				56B96234ADABF11A5CA57172 /* AddGroupViewController.xib in Resources */,
+				BEDE73C655BC16B3F4FA3E40 /* AddProfileViewController.xib in Resources */,
 				5D0CC04F866509AD69D1B4D8 /* Assets.xcassets in Resources */,
-				6A980C9A25FF595C0021FE41 /* AddGroupViewController.xib in Resources */,
+				F64C02A1D3AF241E60A9DA48 /* DetailViewController.xib in Resources */,
+				BDF1B8499750C20F7D36658D /* GroupListViewController.xib in Resources */,
 				4E8B3BF6BA562E3E6C5923EB /* LaunchScreen.storyboard in Resources */,
-				6A980CA125FF59780021FE41 /* AddProfileViewController.xib in Resources */,
+				D7797F9125FF6420006B7B7E /* ProfileListCollectionViewCell.xib in Resources */,
 				1FD5A828B815675CE05A67EF /* Main.storyboard in Resources */,
+				85043C8DBDAE42DB8D984392 /* ProfileListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C78EAECBBB3ECD45AF69268 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Brachio_ColombiaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0D10975F48C8C1B9C65CEE89 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Brachio_Colombia-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0D208BBDA199BDDA0F9C4846 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		11922DCEFC740ED2E8894241 /* [CP] Check Pods Manifest.lock */ = {
+		1E93C610A3B599055A53FB53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,7 +373,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A413ECC9E35F9E99DD56241E /* [CP] Embed Pods Frameworks */ = {
+		3AD24BC7E7F0CA3E3D25C0BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brachio_Colombia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BC3FC614CC659F48ECCF910 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,6 +410,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia/Pods-Brachio_Colombia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B573152AB593B65D9F4FA30B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brachio_ColombiaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6F5BAEFC22A101BB06A7A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -445,13 +466,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A980C8125FF58A40021FE41 /* GroupListViewController.swift in Sources */,
+				D7797F9025FF6420006B7B7E /* ProfileListCollectionViewCell.swift in Sources */,
+				76F84060E53B24C0E968950C /* AddGroupViewController.swift in Sources */,
+				8504D482DE55B773E5F0ABF7 /* AddProfileViewController.swift in Sources */,
 				EF665D2D5936545B86FC2B41 /* AppDelegate.swift in Sources */,
-				6A980C8F25FF59440021FE41 /* DetailViewController.swift in Sources */,
-				6A980CA025FF59780021FE41 /* AddProfileViewController.swift in Sources */,
-				6A980C8825FF58CE0021FE41 /* ProfileListViewController.swift in Sources */,
-				6A980C9925FF595C0021FE41 /* AddGroupViewController.swift in Sources */,
+				BFF7DB1363EB33CC48602B08 /* DetailViewController.swift in Sources */,
+				D7797F8225FF6193006B7B7E /* UIView+.swift in Sources */,
+				83C8328EF416CAA09C722971 /* GroupListViewController.swift in Sources */,
+				8A388EDDD31695E8C140177D /* ProfileListViewController.swift in Sources */,
 				754C3F091BF9AD3B38346AF6 /* SceneDelegate.swift in Sources */,
+				D7797F8A25FF63C9006B7B7E /* CollectionView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +586,7 @@
 		};
 		255F67622AE750350E57A3B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEA8B2200601391C83A6BD23 /* Pods-Brachio_Colombia.release.xcconfig */;
+			baseConfigurationReference = ABE967F3D9259B52BE20CC76 /* Pods-Brachio_Colombia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -580,7 +604,7 @@
 		};
 		4E87AE6492A4CA15442D9CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */;
+			baseConfigurationReference = 69D52CE22307F23740D2F440 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
@@ -653,7 +677,7 @@
 		};
 		7CA616669D050F0F5E28AC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */;
+			baseConfigurationReference = 97D4ECE641F81B9BF55A4199 /* Pods-Brachio_ColombiaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
@@ -671,7 +695,7 @@
 		};
 		C07607867EA0F55FFF0E8DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 482006BB4E81039BAB9B0D4C /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */;
+			baseConfigurationReference = 0D9C1269D16385DDCB2A92FD /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaUITests/Info.plist;
@@ -689,7 +713,7 @@
 		};
 		C17BF5B7883B85B90629EF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E82C19CADE24C40E3DB8E7B0 /* Pods-Brachio_ColombiaTests.debug.xcconfig */;
+			baseConfigurationReference = 7D7E9EB597917507A55502B4 /* Pods-Brachio_ColombiaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Brachio_ColombiaTests/Info.plist;
@@ -707,7 +731,7 @@
 		};
 		F5DBA5619E3C3B6217390B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC8C17904CE725D11A85DE8E /* Pods-Brachio_Colombia.debug.xcconfig */;
+			baseConfigurationReference = 7DFBD38B39A872FF134B1C4A /* Pods-Brachio_Colombia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

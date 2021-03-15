@@ -8,7 +8,13 @@
 import UIKit
 
 class ProfileListViewController: UIViewController {
-
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.registerNib(ProfileListCollectionViewCell.self)
+            let backGround
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -16,7 +16,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             let window = UIWindow(frame: UIScreen.main.bounds)
             self.window = window
-            window.rootViewController = GroupListViewController()
+            window.rootViewController = ProfileListViewController()
             window.makeKeyAndVisible()
         }
         return true
