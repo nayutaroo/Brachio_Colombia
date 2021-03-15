@@ -7,7 +7,8 @@ target 'Brachio_Colombia' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
   target 'Brachio_ColombiaTests' do
     inherit! :search_paths
     # Pods for testing
