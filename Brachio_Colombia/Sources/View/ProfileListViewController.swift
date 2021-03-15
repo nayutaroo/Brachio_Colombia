@@ -69,6 +69,8 @@ class ProfileListViewController: UIViewController {
 
 extension ProfileListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
