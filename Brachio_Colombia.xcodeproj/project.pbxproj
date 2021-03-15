@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		05BD4DD2EF4974930CF26087 /* Brachio_ColombiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brachio_ColombiaTests.swift; sourceTree = "<group>"; };
 		0C7CE39FC2A3134DF70507C7 /* Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brachio_Colombia_Brachio_ColombiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F8DF118241697A8CB2E0DFC /* Brachio_Colombia.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Brachio_Colombia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8DF118241697A8CB2E0DFC /* Brachio_Colombia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brachio_Colombia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		108370295474B9D959863EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1D71E2D98EB3A0DC567D0148 /* Pods-Brachio_ColombiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_ColombiaTests.release.xcconfig"; path = "Target Support Files/Pods-Brachio_ColombiaTests/Pods-Brachio_ColombiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		327D8ACF700525D94F669544 /* Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brachio_Colombia-Brachio_ColombiaUITests/Pods-Brachio_Colombia-Brachio_ColombiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -572,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tech-Nayuta.Brachio_Colombia";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tech-Nayuta.BrachioColombia";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -717,7 +717,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tech-Nayuta.Brachio_Colombia";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tech-Nayuta.BrachioColombia";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
