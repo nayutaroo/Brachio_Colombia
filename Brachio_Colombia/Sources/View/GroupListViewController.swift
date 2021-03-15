@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class GroupListViewController: UIViewController {
+final class GroupListViewController: UIViewController {
     
     @IBOutlet weak var toAddGroupButton: UIButton! {
         didSet {
@@ -21,9 +23,15 @@ class GroupListViewController: UIViewController {
             // TODO: なゆたが作ったCellをここでも使う
         }
     }
+    var disposebBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        toAddGroupButton.rx.tap
+            .subscribe {  _ in
+                // TODO
+            }
+            .disposed(by: disposebBag)
     }
 }
 
