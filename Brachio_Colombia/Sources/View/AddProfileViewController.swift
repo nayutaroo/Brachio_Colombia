@@ -38,6 +38,10 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
         viewSetup()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     private func viewSetup() {
         view.addBackground(name: "tree")
     }
