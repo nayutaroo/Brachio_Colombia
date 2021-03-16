@@ -22,6 +22,10 @@ class SignupViewController: UIViewController {
 
         forCornerButton.layer.cornerRadius = 15.0
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 
     @IBAction func signupButton(_ sender: Any) {
