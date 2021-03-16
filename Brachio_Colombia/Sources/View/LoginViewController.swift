@@ -24,6 +24,11 @@ class LoginViewController: UIViewController {
         forcornerButton.layer.cornerRadius = 15.0
 
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func loginButton(_ sender: Any) {
         mailAddress = mailTextField.text!
         passWord = passwordTextField.text!
