@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddGroupViewController" customModule="Brachio_Colombia" customModuleProvider="target">
             <connections>
                 <outlet property="addGroupButton" destination="kjM-Z1-lAc" id="Fqn-cb-6gs"/>
+                <outlet property="groupImageButton" destination="LlO-0B-Z7D" id="5Sl-3v-bKt"/>
                 <outlet property="groupNameTextField" destination="dne-os-LRE" id="PPW-lH-VGE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,20 +27,31 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dne-os-LRE">
-                    <rect key="frame" x="60" y="206" width="294" height="34"/>
+                    <rect key="frame" x="60" y="361" width="294" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-0B-Z7D">
+                    <rect key="frame" x="82" y="105" width="250" height="187.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="PGT-1V-E4R"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="photo" catalog="system"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dne-os-LRE" secondAttribute="trailing" constant="60" id="HIo-xl-IBO"/>
-                <constraint firstItem="dne-os-LRE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LDk-l2-Cjq"/>
+                <constraint firstItem="dne-os-LRE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DBb-Vt-jvM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dne-os-LRE" secondAttribute="trailing" constant="60" id="FcR-Vj-irq"/>
+                <constraint firstItem="LlO-0B-Z7D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="82" id="I5I-5C-SKl"/>
                 <constraint firstItem="kjM-Z1-lAc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="122" id="SQl-Cb-YWO"/>
-                <constraint firstItem="dne-os-LRE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="162" id="TKv-V1-Iuf"/>
-                <constraint firstItem="dne-os-LRE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="bcm-OR-FgL"/>
+                <constraint firstItem="dne-os-LRE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="eiK-Tc-T65"/>
                 <constraint firstItem="kjM-Z1-lAc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fc7-40-DRv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LlO-0B-Z7D" secondAttribute="trailing" constant="82" id="gNY-n1-YTk"/>
+                <constraint firstItem="LlO-0B-Z7D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jrK-5c-177"/>
+                <constraint firstItem="dne-os-LRE" firstAttribute="top" secondItem="LlO-0B-Z7D" secondAttribute="bottom" constant="67" id="qlP-Ls-rac"/>
+                <constraint firstItem="LlO-0B-Z7D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="taX-9F-i5z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kjM-Z1-lAc" secondAttribute="trailing" constant="122" id="von-Wo-xGI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kjM-Z1-lAc" secondAttribute="bottom" constant="177" id="wkd-xJ-DJ1"/>
             </constraints>
@@ -47,6 +59,7 @@
         </view>
     </objects>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
