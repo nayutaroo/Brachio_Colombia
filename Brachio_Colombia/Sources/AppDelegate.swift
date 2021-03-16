@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             let window = UIWindow(frame: UIScreen.main.bounds)
             self.window = window
-            window.rootViewController = UINavigationController(rootViewController: ProfileListViewController())
+            window.rootViewController = UINavigationController(rootViewController: GroupListViewController())
             window.makeKeyAndVisible()
         }
         return true
