@@ -39,12 +39,28 @@ struct DBClient {
         }
     }
     
-    func createGroup(group: Group, completion: @escaping (Result<Void, Error>) -> Void) {
+    func joinGroup(groupId: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard let user = Auth.auth().currentUser else { return }
+        
+        let userReference: DocumentReference = db.document("users/\(user.uid)")
+        userReference.updateData(["groupIds": FieldValue.arrayUnion([groupId])]) { error in
+            if let error = error {
+                completion(.failure(error))
+            }
+            else {
+                completion(.success(()))
+            }
+        }
+    }
+    
+    func createGroup(group: Group, completion: @escaping (Result<Group, Error>) -> Void) {
         // TODO: 要チェック
         guard let user = Auth.auth().currentUser else { return }
 
         let userReference: DocumentReference = db.document("users/\(user.uid)")
         let groupReference: DocumentReference = db.collection("groups").document()
+        
+        let resGroup = Group(id: groupReference.documentID, name: group.name, imageUrl: group.imageUrl)
 
         db.runTransaction({ (transaction, errorPointer) -> Any? in
             transaction.setData(group.dictionary, forDocument: groupReference)
@@ -55,8 +71,9 @@ struct DBClient {
                 completion(.failure(error))
                 return
             }
+            
         })
-        completion(.success(()))
+        completion(.success(resGroup))
     }
     
     

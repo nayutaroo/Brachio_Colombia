@@ -90,6 +90,7 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     private func profileCreate() {
+        
         guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String,
               let profile = self.profile else {
             print("group取得エラー")

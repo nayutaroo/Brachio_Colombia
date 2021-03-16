@@ -95,10 +95,11 @@ class GroupListViewController: UIViewController {
 extension GroupListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        UserDefaults.standard.set(groups[indexPath.row].id, forKey: "groupId")
-        
-        let vc = ProfileListViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        if let id = groups[indexPath.row].id {
+            UserDefaults.standard.set(id, forKey: "groupId")
+            let vc = ProfileListViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
