@@ -58,8 +58,8 @@ struct DBClient {
     }
     
     
-    func createProfile(group_id: String, profile: Profile, completion: @escaping (Result<Void, Error>) -> Void) {
-        db.collection("groups/\(group_id)/profiles").document().setData(profile.dictionary) { error in
+    func createProfile(groupId: String, profile: Profile, completion: @escaping (Result<Void, Error>) -> Void) {
+        db.collection("groups/\(groupId)/profiles").document().setData(profile.dictionary) { error in
             if let error = error {
                 completion(.failure(error))
                 return

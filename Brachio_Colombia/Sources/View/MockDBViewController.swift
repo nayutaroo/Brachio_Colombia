@@ -48,11 +48,11 @@ class MockDBViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        button2.rx.tap
-            .bind(to: Binder(self) { me, _ in
-                me.dbClient.createProfile(group_id: "1ITrcN47PwVSLrqXD7L7", profile: Profile(name: "kohei", message: "ありがとう！", imageUrl: "")) { _ in }
-            })
-            .disposed(by: disposeBag)
+//        button2.rx.tap
+//            .bind(to: Binder(self) { me, _ in
+//                me.dbClient.createProfile(group_id: "1ITrcN47PwVSLrqXD7L7", profile: Profile(name: "kohei", message: "ありがとう！", imageUrl: "")) { _ in }
+//            })
+//            .disposed(by: disposeBag)
         
         button3.rx.tap
             .bind(to: Binder(self) { me, _ in
