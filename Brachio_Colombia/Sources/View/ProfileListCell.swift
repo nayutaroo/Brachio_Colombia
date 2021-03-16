@@ -6,12 +6,11 @@
 //
 
 import UIKit
-
+import Nuke
 
 class ProfileListCell: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var iconImageView: UIImageView! {
         didSet {
             iconImageView.contentMode = .scaleAspectFill
@@ -23,10 +22,16 @@ class ProfileListCell: UICollectionViewCell {
         }
     }
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        // Initialization code
+    }
+    
+    override func prepareForReuse() {
     }
 
+    func configure(with profile: Profile) {
+        nameLabel.text = profile.name
+        iconImageView.loadImage(from: profile.imageUrl)
+    }
 }

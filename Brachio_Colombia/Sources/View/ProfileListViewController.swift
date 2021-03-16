@@ -122,6 +122,7 @@ extension ProfileListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(ProfileListCell.self, for: indexPath)
+        cell.configure(with: profilesRelay.value[indexPath.row])
         return cell
     }
     
