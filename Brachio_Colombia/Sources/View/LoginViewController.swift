@@ -28,17 +28,17 @@ class LoginViewController: UIViewController {
         mailAddress = mailTextField.text!
         passWord = passwordTextField.text!
         
-        userRepository.login(email: mailAddress, password: passWord) { (result) in
+        userRepository.login(email: mailAddress, password: passWord) { [weak self] result in
             switch result {
             case .success():
-                break
+                //画面遷移する
+                let groupListVC = GroupListViewController()
+                self?.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
                 print(error)
             }
         }
-        //画面遷移する
-        let groupListVC = GroupListViewController()
-        navigationController?.pushViewController(groupListVC, animated: true)
+        
         
     }
     @IBAction func signupButton(_ sender: Any) {
