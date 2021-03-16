@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 struct Group: Decodable {
-    let id: String
+    var id: String?
     let name: String
     let imageUrl: String
 //    let profiles: [Profile]

@@ -85,7 +85,8 @@ struct DBClient {
             
             let groups = groupIds.compactMap { id -> Group? in
                 let doc = groupsCollectionReference.document(id)
-                if let snapshot = try? transaction.getDocument(doc), let group = try? snapshot.data(as: Group.self) {
+                if let snapshot = try? transaction.getDocument(doc), var group = try? snapshot.data(as: Group.self) {
+                    group.id = doc.documentID
                     return group
                 }
                 else {
@@ -104,7 +105,19 @@ struct DBClient {
     }
     
     func getProfiles(groupId: String, completion: @escaping (Result<[Profile], Error>) -> Void) {
-       
-      
+        
+        db.collection("groups/\(groupId)/profiles").getDocuments() { snapshot, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let snapshot = snapshot {
+                let profiles = snapshot.documents.compactMap {
+                        try? $0.data(as: Profile.self)
+                    }
+                completion(.success(profiles))
+            }
+        }
     }
 }

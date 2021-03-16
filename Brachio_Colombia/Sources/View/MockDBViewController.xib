@@ -14,6 +14,7 @@
                 <outlet property="button" destination="VwM-I1-w9M" id="WMd-6X-PNt"/>
                 <outlet property="button2" destination="dPG-Ws-c8z" id="8cA-pM-cCq"/>
                 <outlet property="button3" destination="e5m-A2-4OS" id="0Fi-CK-0xM"/>
+                <outlet property="button4" destination="F7V-5d-hML" id="hvd-FS-MfJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,6 +35,11 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5m-A2-4OS">
                     <rect key="frame" x="20" y="294" width="125" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7V-5d-hML">
+                    <rect key="frame" x="26" y="362" width="125" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                 </button>

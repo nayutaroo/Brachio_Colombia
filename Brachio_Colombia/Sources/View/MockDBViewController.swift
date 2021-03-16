@@ -27,6 +27,12 @@ class MockDBViewController: UIViewController {
             button3.setTitle("グループ一覧表示", for: .normal)
         }
     }
+    @IBOutlet weak var button4: UIButton! {
+        didSet {
+            button4.setTitle("プロフィール表示", for: .normal)
+        }
+
+    }
     
     private let dbClient: DBClient = .shared
     private let disposeBag = DisposeBag()
@@ -54,6 +60,19 @@ class MockDBViewController: UIViewController {
                     switch result {
                     case .success(let groups):
                         print(groups)
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        button4.rx.tap
+            .bind(to: Binder(self) { me, _ in
+                me.dbClient.getProfiles(groupId: "1ITrcN47PwVSLrqXD7L7") { result in
+                    switch result {
+                    case .success(let profiles):
+                        print(profiles)
                     case .failure(let error):
                         print(error)
                     }
