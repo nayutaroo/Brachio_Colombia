@@ -14,7 +14,7 @@ struct GroupRepository {
         dbClient.getGroups(completion: completion)
     }
     
-    func create(group: Group, completion: @escaping (Result<Void,Error>) -> Void) {
+    func create(group: Group, completion: @escaping (Result<Group,Error>) -> Void) {
         dbClient.createGroup(group: group, completion: completion)
     }
     
