@@ -7,8 +7,7 @@
 
 import UIKit
 
-class AddProfileViewController: UIViewController {
-
+class AddProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //ライブラリから取得した画像をボタンに貼り付けるために@IBOutletで宣言
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -24,7 +23,14 @@ class AddProfileViewController: UIViewController {
 
     @IBAction func addPhotoButton(_ sender: Any) {
         //ライブラリにアクセス
-        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let picker = UIImagePickerController()
+            picker.sourceType = .photoLibrary
+            picker.delegate = self
+            
+            picker.allowsEditing = true
+            present(picker, animated: true, completion: nil)
+        }
         //取得したライブラリの写真をimageButtonにぶちこむ
         
     }
@@ -35,5 +41,11 @@ class AddProfileViewController: UIViewController {
         name = nameTextField.text ?? ""
         message = messageTextView.text ?? ""
         //firestoreにPOSTする
+    }
+    
+    //表示するためのメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageButton.setImage(info[.editedImage] as? UIImage, for: .normal)
+        dismiss(animated: true, completion: nil)
     }
 }
