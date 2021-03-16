@@ -30,7 +30,7 @@ class GroupListViewController: UIViewController {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             let groupSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .fractionalHeight(0.36)
+                heightDimension: .fractionalHeight(0.26)
             )
             let group = NSCollectionLayoutGroup.horizontal(
                 layoutSize: groupSize,
@@ -81,7 +81,28 @@ extension GroupListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(GroupListCell.self, for: indexPath)
+        cell.profileNameLabel.text = groups[indexPath.row].name
+        cell.profileImageView.loadImage(from: groups[indexPath.row].imageUrl)
         return cell
     }
-    
+}
+
+
+import Nuke
+
+extension UIImageView {
+    func loadImage(from urlString: String?) {
+        guard let urlString = urlString, let url = URL(string: urlString) else {
+            self.image = UIImage(systemName: "photo")
+            return
+        }
+        let options = ImageLoadingOptions(
+            placeholder: UIImage(systemName: "photo"),
+            transition: .fadeIn(duration: 0.33),
+            failureImage: UIImage(systemName: "photo"),
+            failureImageTransition: .fadeIn(duration: 0.33),
+            contentModes: .init(success: .scaleAspectFill, failure: .scaleAspectFill, placeholder: .scaleAspectFill)
+        )
+        Nuke.loadImage(with: url, options: options, into: self)
+    }
 }
