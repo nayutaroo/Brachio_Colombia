@@ -32,11 +32,10 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-0B-Z7D">
-                    <rect key="frame" x="82" y="105" width="250" height="187.5"/>
+                    <rect key="frame" x="82" y="104" width="250" height="190"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="190" id="PGT-1V-E4R"/>
                     </constraints>
-                    <state key="normal" backgroundImage="photo" catalog="system"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -59,7 +58,6 @@
         </view>
     </objects>
     <resources>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

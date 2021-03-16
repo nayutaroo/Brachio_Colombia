@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupListViewController" customModule="Brachio_Colombia" customModuleProvider="target">
             <connections>
-                <outlet property="collectonView" destination="EIi-Je-AYB" id="Kec-lx-oYe"/>
+                <outlet property="collectionView" destination="EIi-Je-AYB" id="oZi-sF-aaM"/>
                 <outlet property="toAddGroupButton" destination="Suu-73-xO1" id="hLj-Jx-DM6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,11 +33,15 @@
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suu-73-xO1">
                     <rect key="frame" x="334" y="782" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="SLz-E8-PoE"/>
                         <constraint firstAttribute="width" constant="50" id="buo-0b-OHQ"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -56,6 +60,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

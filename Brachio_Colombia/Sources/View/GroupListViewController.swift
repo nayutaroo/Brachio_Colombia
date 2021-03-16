@@ -10,11 +10,41 @@ import RxSwift
 import RxCocoa
 
 class GroupListViewController: UIViewController {
-
-    @IBOutlet weak var collectonView: UICollectionView!
+    
+    enum Const {
+        static let numberOfItemInLine = 1
+    }
+    
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.delegate = self
+            collectionView.dataSource = self
+            collectionView.registerNib(GroupListCell.self)
+            let itemSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(1.0)
+            )
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            let groupSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(0.36)
+            )
+            let group = NSCollectionLayoutGroup.horizontal(
+                layoutSize: groupSize,
+                subitem: item,
+                count: Const.numberOfItemInLine
+            )
+            let section = NSCollectionLayoutSection(group: group)
+            let layout = UICollectionViewCompositionalLayout(section: section)
+            collectionView.collectionViewLayout = layout
+        }
+    }
     @IBOutlet weak var toAddGroupButton: UIButton! {
         didSet {
-            toAddGroupButton.setTitle("+", for: .normal)
+            toAddGroupButton.cornerRadius = 25
+            toAddGroupButton.shadowOffset = CGSize(width: 3, height: 3)
+            toAddGroupButton.shadowColor = .black
+            toAddGroupButton.shadowOpacity = 0.6
         }
     }
     private let disposeBag = DisposeBag()
@@ -44,7 +74,7 @@ extension GroupListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(ProfileListCell.self, for: indexPath)
+        let cell = collectionView.dequeue(GroupListCell.self, for: indexPath)
         return cell
     }
     
