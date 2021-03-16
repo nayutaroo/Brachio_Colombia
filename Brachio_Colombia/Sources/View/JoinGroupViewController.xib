@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinGroupViewController" customModule="Brachio_Colombia" customModuleProvider="target">
             <connections>
+                <outlet property="groupIdTextField" destination="2kT-WB-ooW" id="5zS-nH-iZy"/>
+                <outlet property="joinButton" destination="rb9-62-6Xk" id="vVf-FB-kHf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
