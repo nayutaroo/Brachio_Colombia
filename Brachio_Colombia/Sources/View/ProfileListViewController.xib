@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="addProfileButton" destination="yUa-zG-0wD" id="qWB-dw-jyB"/>
                 <outlet property="collectionView" destination="HOg-ul-ZQw" id="TjJ-K1-7fn"/>
+                <outlet property="shareButton" destination="YTZ-b8-Qk3" id="ikb-2k-6xd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,12 +44,26 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-b8-Qk3">
+                    <rect key="frame" x="30" y="782" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.27058823529999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1PK-6R-IrX"/>
+                        <constraint firstAttribute="width" constant="50" id="ckB-18-Gk1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="share">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="HOg-ul-ZQw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Aid-g1-UvB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YTZ-b8-Qk3" secondAttribute="bottom" constant="30" id="LRU-wP-xYk"/>
                 <constraint firstItem="HOg-ul-ZQw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RLd-gv-bHv"/>
+                <constraint firstItem="YTZ-b8-Qk3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="e68-8D-yjd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yUa-zG-0wD" secondAttribute="trailing" constant="30" id="eGl-I3-jVl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HOg-ul-ZQw" secondAttribute="bottom" id="g5q-o9-zmE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yUa-zG-0wD" secondAttribute="bottom" constant="30" id="rWd-LY-U2H"/>

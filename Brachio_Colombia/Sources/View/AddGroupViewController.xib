@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,11 +23,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjM-Z1-lAc">
-                    <rect key="frame" x="122" y="782" width="170" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="132" y="762" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.27450980390000002" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="KFj-KO-SWs"/>
+                        <constraint firstAttribute="height" constant="50" id="SMe-cX-Por"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dne-os-LRE">
                     <rect key="frame" x="60" y="361" width="294" height="34"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.27450980390000002" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -44,14 +53,12 @@
                 <constraint firstItem="dne-os-LRE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DBb-Vt-jvM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dne-os-LRE" secondAttribute="trailing" constant="60" id="FcR-Vj-irq"/>
                 <constraint firstItem="LlO-0B-Z7D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="82" id="I5I-5C-SKl"/>
-                <constraint firstItem="kjM-Z1-lAc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="122" id="SQl-Cb-YWO"/>
                 <constraint firstItem="dne-os-LRE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="eiK-Tc-T65"/>
                 <constraint firstItem="kjM-Z1-lAc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fc7-40-DRv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LlO-0B-Z7D" secondAttribute="trailing" constant="82" id="gNY-n1-YTk"/>
                 <constraint firstItem="LlO-0B-Z7D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jrK-5c-177"/>
                 <constraint firstItem="dne-os-LRE" firstAttribute="top" secondItem="LlO-0B-Z7D" secondAttribute="bottom" constant="67" id="qlP-Ls-rac"/>
                 <constraint firstItem="LlO-0B-Z7D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="taX-9F-i5z"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kjM-Z1-lAc" secondAttribute="trailing" constant="122" id="von-Wo-xGI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kjM-Z1-lAc" secondAttribute="bottom" constant="50" id="wkd-xJ-DJ1"/>
             </constraints>
             <point key="canvasLocation" x="-197.10144927536234" y="123.88392857142857"/>

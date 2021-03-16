@@ -10,8 +10,20 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var forcornerButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField! {
+        didSet {
+            passwordTextField.isSecureTextEntry = true
+        }
+    }
+    @IBOutlet weak var forcornerButton: UIButton! {
+        didSet {
+            forcornerButton.cornerRadius = 25
+            forcornerButton.shadowOffset = CGSize(width: 3, height: 3)
+            forcornerButton.shadowColor = .black
+            forcornerButton.shadowOpacity = 0.6
+        }
+        
+    }
     
     //記入されたメールアドレス，パスワードを格納する変数
     var mailAddress: String = ""
@@ -21,6 +33,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addBackground(name: "tree")
+        title = "Sign In"
         forcornerButton.layer.cornerRadius = 15.0
 
     }

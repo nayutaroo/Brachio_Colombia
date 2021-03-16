@@ -10,14 +10,28 @@ import UIKit
 class SignupViewController: UIViewController {
 
     @IBOutlet weak var signupMailTextField: UITextField!
-    @IBOutlet weak var signupPassTextField: UITextField!
+    @IBOutlet weak var signupPassTextField: UITextField! {
+        didSet {
+            signupPassTextField.isSecureTextEntry = true
+        }
+    }
     var signupMailAddress: String = ""
     var signupPassWord: String = ""
     
     private let userRepository = UserRepository()
     
-    @IBOutlet weak var forCornerButton: UIButton!
+    @IBOutlet weak var forCornerButton: UIButton! {
+        didSet {
+            forCornerButton.cornerRadius = 25
+            forCornerButton.shadowOffset = CGSize(width: 3, height: 3)
+            forCornerButton.shadowColor = .black
+            forCornerButton.shadowOpacity = 0.6
+        }
+    }
+    
     override func viewDidLoad() {
+        view.addBackground(name: "tree")
+        title = "Sign Up"
         super.viewDidLoad()
 
         forCornerButton.layer.cornerRadius = 15.0
