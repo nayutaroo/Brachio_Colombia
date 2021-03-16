@@ -16,6 +16,8 @@ class GroupListViewController: UIViewController {
         static let numberOfItemInLine = 1
     }
     
+    private let groups: [Group] = [Group(id: "1ITrcN47PwVSLrqXD7L7", name: "CATechAccel", imageUrl: "https://www.logodaku.com/wp-content/uploads/2018/07/pexels-photo-1043519-1-1200x630.jpg") ]
+    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -64,6 +66,9 @@ class GroupListViewController: UIViewController {
 
 extension GroupListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        UserDefaults.standard.set(groups[indexPath.row].id, forKey: "groupId")
+        
         let vc = ProfileListViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -71,7 +76,7 @@ extension GroupListViewController: UICollectionViewDelegate {
 
 extension GroupListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        20
+        groups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
