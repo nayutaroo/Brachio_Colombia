@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupListViewController" customModule="Brachio_Colombia" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="EIi-Je-AYB" id="oZi-sF-aaM"/>
+                <outlet property="joinButton" destination="pLa-gn-fDS" id="7gk-Dj-KEw"/>
                 <outlet property="toAddGroupButton" destination="Suu-73-xO1" id="hLj-Jx-DM6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -43,16 +44,30 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLa-gn-fDS">
+                    <rect key="frame" x="30" y="782" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.27058823529999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rZY-Vn-R7w"/>
+                        <constraint firstAttribute="height" constant="50" id="xA1-Vz-CGe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="join">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EIi-Je-AYB" secondAttribute="bottom" id="27T-uJ-WNd"/>
                 <constraint firstItem="EIi-Je-AYB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4KT-Qg-3qT"/>
+                <constraint firstItem="pLa-gn-fDS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="A15-lX-Cac"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EIi-Je-AYB" secondAttribute="trailing" id="LDM-8p-AfS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Suu-73-xO1" secondAttribute="trailing" constant="30" id="eGs-2s-6gm"/>
                 <constraint firstItem="EIi-Je-AYB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="s9M-WA-GJ0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Suu-73-xO1" secondAttribute="bottom" constant="30" id="sDK-rI-cNy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pLa-gn-fDS" secondAttribute="bottom" constant="30" id="wPP-Ud-Q9Q"/>
             </constraints>
             <point key="canvasLocation" x="-196" y="146"/>
         </view>

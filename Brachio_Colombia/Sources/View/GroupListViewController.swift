@@ -21,7 +21,16 @@ class GroupListViewController: UIViewController {
         return groupsRelay.value
     }
     private let groupRepository = GroupRepository()
-
+    
+    @IBOutlet weak var joinButton: UIButton! {
+        didSet {
+            joinButton.cornerRadius = 25
+            joinButton.shadowOffset = CGSize(width: 3, height: 3)
+            joinButton.shadowColor = .black
+            joinButton.shadowOpacity = 0.6
+        }
+    }
+    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -66,6 +75,14 @@ class GroupListViewController: UIViewController {
             let vc = AddGroupViewController(groupsRelay: self.groupsRelay)
             //vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
+        }
+        .disposed(by: disposeBag)
+        
+        joinButton.rx.tap.subscribe { [weak self] _ in
+                guard let self = self else { return }
+                let vc = JoinGroupViewController()
+                //vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
         }
         .disposed(by: disposeBag)
         
