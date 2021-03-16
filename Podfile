@@ -9,6 +9,7 @@ target 'Brachio_Colombia' do
   pod 'RxCocoa'
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'FirebaseFirestoreSwift'
   

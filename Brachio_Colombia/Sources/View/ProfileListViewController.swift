@@ -60,7 +60,7 @@ class ProfileListViewController: UIViewController {
         addProfileButton.rx.tap
             .bind(to: Binder(self) { me, _ in
                 let vc = AddProfileViewController()
-                vc.modalPresentationStyle = .fullScreen
+//                vc.modalPresentationStyle = .fullScreen
                 me.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
