@@ -41,6 +41,10 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
         name = nameTextField.text ?? ""
         message = messageTextView.text ?? ""
         //firestoreにPOSTする
+        
+        
+        //POST完了したら、画面を閉じる
+        dismiss(animated: true, completion: nil)
     }
     
     //表示するためのメソッド
