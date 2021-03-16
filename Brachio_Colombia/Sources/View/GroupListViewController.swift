@@ -16,8 +16,12 @@ class GroupListViewController: UIViewController {
         static let numberOfItemInLine = 1
     }
     
-    private let groups: [Group] = [Group(id: "1ITrcN47PwVSLrqXD7L7", name: "CATechAccel", imageUrl: "https://www.logodaku.com/wp-content/uploads/2018/07/pexels-photo-1043519-1-1200x630.jpg") ]
-    
+    private let groupsRelay = BehaviorRelay<[Group]>(value: [])
+    private var groups: [Group] {
+        return groupsRelay.value
+    }
+    private let groupRepository = GroupRepository()
+
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -55,18 +59,36 @@ class GroupListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSetup()
+        fetch()
         
-        toAddGroupButton.rx.tap.subscribe { _ in
-            let vc = AddGroupViewController()
+        toAddGroupButton.rx.tap.subscribe { [weak self] _ in
+            guard let self = self else { return }
+            let vc = AddGroupViewController(groupsRelay: self.groupsRelay)
             //vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
+        .disposed(by: disposeBag)
+        
+        groupsRelay.asDriver().drive(Binder(self) { me, _ in
+            me.collectionView.reloadData()
+        })
         .disposed(by: disposeBag)
     }
     
     private func viewSetup() {
         title = "Groups"
         view.addBackground(name: "tree")
+    }
+    
+    private func fetch() {
+        groupRepository.fetch {[weak self] result in
+            switch result {
+            case .success(let groups):
+                self?.groupsRelay.accept(groups)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
