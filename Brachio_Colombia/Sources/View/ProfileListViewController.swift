@@ -86,6 +86,7 @@ class ProfileListViewController: UIViewController {
         
         profilesRelay.asDriver()
             .drive( Binder(self) { me, _ in
+                print("更新")
                 me.collectionView.reloadData()
             })
             .disposed(by: disposeBag)
