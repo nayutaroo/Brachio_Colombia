@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     //記入されたメールアドレス，パスワードを格納する変数
     var mailAddress: String = ""
     var passWord: String = ""
+    
+    private let userRepository = UserRepository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         forcornerButton.layer.cornerRadius = 15.0
@@ -24,6 +27,17 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         mailAddress = mailTextField.text!
         passWord = passwordTextField.text!
+        
+        userRepository.login(email: mailAddress, password: passWord) { (result) in
+            switch result {
+            case .success():
+                break
+            case .failure(let error):
+                print(error)
+            }
+        }
+        //画面遷移する
+        
     }
     @IBAction func signupButton(_ sender: Any) {
         //画面遷移→SignupViewController
