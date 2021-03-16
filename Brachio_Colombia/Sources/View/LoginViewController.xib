@@ -64,7 +64,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="サインアップ画面へ"/>
                     <connections>
-                        <action selector="signUpButton:" destination="-1" eventType="touchUpInside" id="fic-Q9-8Fu"/>
+                        <action selector="signupButton:" destination="-1" eventType="touchUpInside" id="wcK-vO-mlC"/>
                     </connections>
                 </button>
             </subviews>

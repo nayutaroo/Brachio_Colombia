@@ -37,8 +37,12 @@ class SignupViewController: UIViewController {
             }
         }
         //画面遷移
+        let groupListVC = GroupListViewController()
+        navigationController?.pushViewController(groupListVC, animated: true)
     }
+    
     @IBAction func toLoginButton(_ sender: Any) {
         //ログインボタンへの画面遷移
+        self.navigationController?.popViewController(animated: true)
     }
 }

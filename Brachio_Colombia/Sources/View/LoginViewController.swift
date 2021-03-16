@@ -37,10 +37,14 @@ class LoginViewController: UIViewController {
             }
         }
         //画面遷移する
+        let groupListVC = GroupListViewController()
+        navigationController?.pushViewController(groupListVC, animated: true)
         
     }
     @IBAction func signupButton(_ sender: Any) {
         //画面遷移→SignupViewController
+        let signupVC = SignupViewController()
+        navigationController?.pushViewController(signupVC, animated: true)
     }
     
 }
