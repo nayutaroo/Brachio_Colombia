@@ -20,6 +20,11 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var addGroupButton: UIButton! {
         didSet {
             addGroupButton.setTitle("グループを作成", for: .normal)
+            addGroupButton.cornerRadius = 25
+            addGroupButton.shadowOffset = CGSize(width: 3, height: 3)
+            addGroupButton.shadowColor = .black
+            addGroupButton.shadowOpacity = 0.6
+            
         }
     }
     @IBOutlet weak var groupImageButton: UIButton! {
@@ -49,6 +54,8 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addBackground(name: "tree")
+        
         addGroupButton.rx.tap.subscribe { [weak self] _ in
             // TODO: グループ追加のPOST
             let storage: DBStorage = .shared

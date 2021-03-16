@@ -17,6 +17,11 @@ class JoinGroupViewController: UIViewController {
     @IBOutlet weak var joinButton: UIButton! {
         didSet {
             joinButton.setTitle("join", for: .normal)
+            joinButton.setTitle("グループを作成", for: .normal)
+            joinButton.cornerRadius = 25
+            joinButton.shadowOffset = CGSize(width: 3, height: 3)
+            joinButton.shadowColor = .black
+            joinButton.shadowOpacity = 0.6
         }
     }
     
@@ -36,6 +41,8 @@ class JoinGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addBackground(name: "tree")
+        
         joinButton.rx.tap.bind(to: Binder(self) { me, _ in
             me.join()
             me.dismiss(animated: true)

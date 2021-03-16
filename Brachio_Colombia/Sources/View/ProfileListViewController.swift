@@ -15,6 +15,16 @@ class ProfileListViewController: UIViewController {
         static let numberOfItemInLine = 1
     }
     
+    @IBOutlet weak var shareButton: UIButton! {
+        didSet {
+            shareButton.cornerRadius = 25
+            shareButton.shadowOffset = CGSize(width: 3, height: 3)
+            shareButton.shadowColor = .black
+            shareButton.shadowOpacity = 0.6
+        }
+    }
+    
+    
     init( profileRepository: ProfileRepository = .init()) {
         self.profileRepository = profileRepository
         super.init(nibName: nil, bundle: nil)
@@ -67,14 +77,23 @@ class ProfileListViewController: UIViewController {
     
     private let profilesRelay = BehaviorRelay<[Profile]>(value: [])
     
-    
-    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSetup()
         fetch()
+        
+        shareButton.rx.tap
+            .bind(to: Binder(self) { me, _ in
+                guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String else {
+                    print("group取得エラー")
+                    return
+                }
+                let vc = GroupIdViewController(groupId: groupId)
+                me.present(vc, animated: true)
+            })
+            .disposed(by: disposeBag)
         
         addProfileButton.rx.tap
             .bind(to: Binder(self) { me, _ in
