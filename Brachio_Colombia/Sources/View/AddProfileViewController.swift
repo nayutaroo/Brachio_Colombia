@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseFirestore
+import RxSwift
+import RxCocoa
 
 class AddProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -17,12 +17,36 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var messageTextView: UITextView!
     
-    var name: String!
-    var message: String!
-    var selectedImage: UIImage!
+    private var selectedImage: UIImage?
+    private var profile: Profile?
+    
+    private let profileRepository: ProfileRepository
+    private let profilesRelay: BehaviorRelay<[Profile]>
+    
+    init(profileRepository: ProfileRepository = .init(), profilesRelay: BehaviorRelay<[Profile]>) {
+        self.profileRepository = profileRepository
+        self.profilesRelay = profilesRelay
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewSetup()
+    }
+    
+    private func viewSetup() {
+        view.addBackground(name: "tree")
+    }
+    
+    //表示するためのメソッド
+    internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageButton.setImage(info[.editedImage] as? UIImage, for: .normal)
+        selectedImage = info[.editedImage] as? UIImage
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func addPhotoButton(_ sender: Any) {
@@ -35,67 +59,50 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
             picker.allowsEditing = true
             present(picker, animated: true, completion: nil)
         }
-        
-        //取得したライブラリの写真をimageButtonにぶちこむ
-        
     }
     
     @IBAction func addProfile(_ sender: Any) {
-        name = nameTextField.text ?? ""
-        message = messageTextView.text ?? ""
-        //firestoreにPOSTする
-        saveToFireStore()
-        //POST完了したら、画面を閉じる
-        dismiss(animated: true, completion: nil)
-    }
-    
-    //表示するためのメソッド
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imageButton.setImage(info[.editedImage] as? UIImage, for: .normal)
-        selectedImage = info[.editedImage] as? UIImage
-        dismiss(animated: true, completion: nil)
-    }
-    
-    //firestorageに画像をアップロードするためのメソッド
-    fileprivate func upload(completed: @escaping(_ url: String?) -> Void) {
-        let date = Date()
-        let currentTimeStampInSecond = UInt64(floor(date.timeIntervalSince1970 * 1000))
-        let storageRef = Storage.storage().reference().child("images").child("\(currentTimeStampInSecond).jpg")
-        let metaData = StorageMetadata()
-        metaData.contentType = "image/jpg"
-        if let uploadData = self.selectedImage.jpegData(compressionQuality: 0.9) {
-            storageRef.putData(uploadData, metadata: metaData) { (metadata, error) in
-                if error != nil {
-                    completed(nil)
-                    print("error: \(error?.localizedDescription)")
-                }
-                storageRef.downloadURL(completion: {(url, error) in
-                    if error != nil {
-                        completed(nil)
-                        print("error:\(error?.localizedDescription)")
-                    }
-                    print("url: \(url?.absoluteString)")
-                    completed(url?.absoluteString)
-                })
-            }
+        let storage: DBStorage = .shared
+        
+        guard let name = nameTextField.text,
+              let message = messageTextView.text,
+              let image = selectedImage else {
+            print("入力エラー")
+            return
         }
         
-    }
-    
-    //Firestoreにurlを保存するメソッド
-    //以下はダミーコードのため、なゆたが作ってくれたモデルに合わせて書き換えなければならない
-    fileprivate func saveToFireStore() {
-        var data: [String: Any] = [:]
-        upload(){url in
-            guard let url = url else { return }
-            data["image"] = url
-            Firestore.firestore().collection("images").document().setData(data) { error in
-                if error != nil {
-                    print("error: \(error?.localizedDescription)")
-                }
-                print("image saved!")
+        
+        storage.uploadImage(image: image) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let imageUrl):
+                self.profile = Profile(name: name, message: message, imageUrl: imageUrl)
+                self.profileCreate()
+            case .failure(let error):
+                print(error)
+                return
             }
         }
     }
     
+    private func profileCreate() {
+        guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String,
+              let profile = self.profile else {
+            print("group取得エラー")
+            return
+        }
+        
+        profileRepository.create(groupId: groupId, profile: profile) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .failure(let error):
+                print(error)
+                return
+            case .success():
+                self.profilesRelay.accept(self.profilesRelay.value + [profile])
+            }
+        }
+        dismiss(animated: true, completion: nil)
+        
+    }
 }

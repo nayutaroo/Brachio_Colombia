@@ -73,12 +73,16 @@ class ProfileListViewController: UIViewController {
         viewSetup()
         
         fetch()
+        
+    
+        
         addProfileButton.rx.tap
             .bind(to: Binder(self) { me, _ in
-                let vc = AddProfileViewController()
+                let vc = AddProfileViewController(profilesRelay: me.profilesRelay)
                 me.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
+        
         
         profilesRelay.asDriver()
             .drive( Binder(self) { me, _ in
