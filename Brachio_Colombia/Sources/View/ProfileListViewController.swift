@@ -71,10 +71,7 @@ class ProfileListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSetup()
-        
         fetch()
-        
-    
         
         addProfileButton.rx.tap
             .bind(to: Binder(self) { me, _ in
