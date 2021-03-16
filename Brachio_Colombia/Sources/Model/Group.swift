@@ -7,12 +7,21 @@
 
 import Foundation
 
-struct Group {
+struct Group: Decodable {
     let name: String
     let imageUrl: String
+    let profiles: [Profile]
     
     var dictionary: [String: Any] {
         return ["name": name,
-                "imageUrl": imageUrl]
+                "imageUrl": imageUrl,
+                "profiles": profiles
+        ]
+    }
+    
+    init(name: String, imageUrl: String, profiles: [Profile] = []) {
+        self.name = name
+        self.imageUrl = imageUrl
+        self.profiles = profiles
     }
 }

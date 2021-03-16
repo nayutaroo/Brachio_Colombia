@@ -10,6 +10,8 @@ target 'Brachio_Colombia' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'FirebaseFirestoreSwift'
+  
   target 'Brachio_ColombiaTests' do
     inherit! :search_paths
     # Pods for testing
