@@ -70,8 +70,7 @@ class ProfileListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addBackground(name: "tree")
+        viewSetup()
         
         fetch()
         addProfileButton.rx.tap
@@ -86,6 +85,10 @@ class ProfileListViewController: UIViewController {
                 me.collectionView.reloadData()
             })
             .disposed(by: disposeBag)
+    }
+    private func viewSetup() {
+        title = "Members"
+        view.addBackground(name: "tree")
     }
 
     

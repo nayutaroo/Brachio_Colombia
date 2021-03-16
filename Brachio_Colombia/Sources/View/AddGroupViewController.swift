@@ -24,7 +24,9 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var groupImageButton: UIButton! {
         didSet {
             groupImageButton.imageView?.contentMode = .scaleAspectFit
-            groupImageButton.setImage(UIImage(systemName: "photo"), for: .normal)
+            let image = UIImage(systemName: "photo")
+            image?.withTintColor(.white)
+            groupImageButton.setImage(image, for: .normal)
         }
     }
     
