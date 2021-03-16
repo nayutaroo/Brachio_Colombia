@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+
 class GroupListViewController: UIViewController {
     
     enum Const {
