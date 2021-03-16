@@ -15,7 +15,6 @@ class ProfileListViewController: UIViewController {
         static let numberOfItemInLine = 1
     }
     
-    
     init( profileRepository: ProfileRepository = .init()) {
         self.profileRepository = profileRepository
         super.init(nibName: nil, bundle: nil)
@@ -65,7 +64,11 @@ class ProfileListViewController: UIViewController {
     }
     
     private let profileRepository: ProfileRepository
+    
     private let profilesRelay = BehaviorRelay<[Profile]>(value: [])
+    
+    
+    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {

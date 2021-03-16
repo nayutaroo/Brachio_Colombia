@@ -39,6 +39,20 @@ struct DBClient {
         }
     }
     
+    func joinGroup(groupId: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard let user = Auth.auth().currentUser else { return }
+        
+        let userReference: DocumentReference = db.document("users/\(user.uid)")
+        userReference.updateData(["groupIds": FieldValue.arrayUnion([groupId])]) { error in
+            if let error = error {
+                completion(.failure(error))
+            }
+            else {
+                completion(.success(()))
+            }
+        }
+    }
+    
     func createGroup(group: Group, completion: @escaping (Result<Void, Error>) -> Void) {
         // TODO: 要チェック
         guard let user = Auth.auth().currentUser else { return }
