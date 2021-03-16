@@ -79,10 +79,10 @@ class GroupListViewController: UIViewController {
         .disposed(by: disposeBag)
         
         joinButton.rx.tap.subscribe { [weak self] _ in
-                guard let self = self else { return }
-                let vc = JoinGroupViewController()
-                //vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
+            guard let self = self else { return }
+            let vc = JoinGroupViewController(groupsRelay: self.groupsRelay)
+            //vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
         .disposed(by: disposeBag)
         

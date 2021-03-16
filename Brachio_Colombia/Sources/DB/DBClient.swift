@@ -39,17 +39,28 @@ struct DBClient {
         }
     }
     
-    func joinGroup(groupId: String, completion: @escaping (Result<Void, Error>) -> Void) {
+    func joinGroup(groupId: String, completion: @escaping (Result<Group, Error>) -> Void) {
         guard let user = Auth.auth().currentUser else { return }
         
         let userReference: DocumentReference = db.document("users/\(user.uid)")
-        userReference.updateData(["groupIds": FieldValue.arrayUnion([groupId])]) { error in
+        userReference.updateData(["groupIds": FieldValue.arrayUnion([groupId])]) {error in
             if let error = error {
                 completion(.failure(error))
+                return
             }
-            else {
-                completion(.success(()))
+        }
+        
+        let groupRef: DocumentReference = db.document("groups/\(groupId)")
+        groupRef.getDocument() { snapshot, error in
+            if let error = error {
+                completion(.failure(error))
+                return
             }
+            guard var group = try? snapshot?.data(as: Group.self) else {
+                return
+            }
+            group.id = groupId
+            completion(.success(group))
         }
     }
     
