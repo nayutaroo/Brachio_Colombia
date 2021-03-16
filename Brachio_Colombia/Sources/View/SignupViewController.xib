@@ -76,14 +76,18 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="nto-Tc-Ir3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0OZ-bS-QNM"/>
+                <constraint firstItem="nto-Tc-Ir3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Jad-Ww-DAG"/>
                 <constraint firstItem="9hT-U8-ch8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L8l-HR-gmy"/>
                 <constraint firstItem="uR1-jy-0Sd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NNH-Sp-Wby"/>
                 <constraint firstItem="iTF-94-TFu" firstAttribute="top" secondItem="ouW-y3-SNT" secondAttribute="bottom" constant="30" id="Ocf-eA-peX"/>
+                <constraint firstItem="ouW-y3-SNT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Rqi-xU-KJO"/>
                 <constraint firstItem="nka-O7-83h" firstAttribute="top" secondItem="nto-Tc-Ir3" secondAttribute="bottom" constant="45" id="Unb-5X-kYv"/>
                 <constraint firstItem="nka-O7-83h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X56-rO-sBh"/>
                 <constraint firstItem="9hT-U8-ch8" firstAttribute="top" secondItem="iTF-94-TFu" secondAttribute="bottom" constant="20" id="azS-gN-UU7"/>
                 <constraint firstItem="nto-Tc-Ir3" firstAttribute="top" secondItem="uR1-jy-0Sd" secondAttribute="bottom" constant="20" id="hdT-Z2-dBR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ouW-y3-SNT" secondAttribute="trailing" constant="30" id="jk0-eX-DGc"/>
                 <constraint firstItem="iTF-94-TFu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l70-h2-qFo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nto-Tc-Ir3" secondAttribute="trailing" constant="30" id="rJY-fl-F0m"/>
                 <constraint firstItem="ouW-y3-SNT" firstAttribute="top" secondItem="nka-O7-83h" secondAttribute="bottom" constant="20" id="s8H-ut-lCJ"/>
                 <constraint firstItem="ouW-y3-SNT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tx5-WW-NK3"/>
                 <constraint firstItem="uR1-jy-0Sd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="xao-k2-1Wi"/>
