@@ -108,7 +108,7 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
         groupRepository.create(group: group)  { [weak self] result in
             guard let self = self else { return }
             switch result {
-            case .success():
+            case .success(let group):
                 self.groupsRelay.accept(self.groupsRelay.value + [group])
             case .failure(let error):
                 print(error)
