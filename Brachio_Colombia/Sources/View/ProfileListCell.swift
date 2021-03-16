@@ -15,10 +15,6 @@ class ProfileListCell: UICollectionViewCell {
         didSet {
             iconImageView.contentMode = .scaleAspectFill
             iconImageView.layer.cornerRadius = 10
-//            iconImageView.shadowColor = .black
-//            iconImageView.shadowOffset = CGSize(width: 5, height: 5)
-//            iconImageView.shadowRadius = 5
-//            iconImageView.layer.shadowOpacity = 1
         }
     }
     

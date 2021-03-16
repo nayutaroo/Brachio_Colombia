@@ -60,7 +60,6 @@ class ProfileListViewController: UIViewController {
             section.contentInsets = NSDirectionalEdgeInsets(top: 30, leading: 0, bottom: 10, trailing: 0)
             let layout = UICollectionViewCompositionalLayout(section: section)
             
-            
             collectionView.collectionViewLayout = layout
         }
     }
@@ -71,14 +70,19 @@ class ProfileListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSetup()
         
         fetch()
+        
+    
+        
         addProfileButton.rx.tap
             .bind(to: Binder(self) { me, _ in
-                let vc = AddProfileViewController()
+                let vc = AddProfileViewController(profilesRelay: me.profilesRelay)
                 me.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
+        
         
         profilesRelay.asDriver()
             .drive( Binder(self) { me, _ in
@@ -86,6 +90,11 @@ class ProfileListViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    private func viewSetup() {
+        title = "Members"
+        view.addBackground(name: "tree")
+    }
+
     
     private func fetch() {
         guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String else {
@@ -109,7 +118,7 @@ class ProfileListViewController: UIViewController {
 
 extension ProfileListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailViewController()
+        let vc = DetailViewController(profile: profilesRelay.value[indexPath.row])
         print(indexPath)
         navigationController?.pushViewController(vc, animated: true)
     }

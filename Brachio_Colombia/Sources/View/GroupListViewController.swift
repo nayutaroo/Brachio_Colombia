@@ -54,6 +54,7 @@ class GroupListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSetup()
         
         toAddGroupButton.rx.tap.subscribe { _ in
             let vc = AddGroupViewController()
@@ -61,6 +62,11 @@ class GroupListViewController: UIViewController {
             self.present(vc, animated: true)
         }
         .disposed(by: disposeBag)
+    }
+    
+    private func viewSetup() {
+        title = "Groups"
+        view.addBackground(name: "tree")
     }
 }
 
