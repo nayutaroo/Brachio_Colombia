@@ -20,6 +20,11 @@ class GroupIdViewController: UIViewController {
             groupIdButton.shadowOpacity = 0.6
         }
     }
+    @IBOutlet weak var clipBoardNotificationLabel: UILabel! {
+        didSet {
+            clipBoardNotificationLabel.isHidden = true
+        }
+    }
     
     init(groupId: String) {
         self.groupId = groupId
