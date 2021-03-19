@@ -18,6 +18,7 @@ class GroupIdViewController: UIViewController {
             groupIdButton.shadowOffset = CGSize(width: 3, height: 3)
             groupIdButton.shadowColor = .black
             groupIdButton.shadowOpacity = 0.6
+            clipBoardNotificationLabel.alpha = 0.0
         }
     }
     @IBOutlet weak var clipBoardNotificationLabel: UILabel! {
@@ -45,7 +46,16 @@ class GroupIdViewController: UIViewController {
         groupIdButton.rx.tap
             .subscribe(Binder(self) { me, _ in
                 UIPasteboard.general.string = me.groupId
+                me.clipBoardNotificationLabel.isHidden = false
+                me.showLabel()
             })
             .disposed(by: disposeBag)
+    }
+    
+    private func showLabel() {
+        clipBoardNotificationLabel.alpha = 1.0
+        UIView.animate(withDuration: 0.3, delay: 3.0, options: .curveEaseOut, animations: {
+            self.clipBoardNotificationLabel.alpha = 0.0
+        }, completion: nil)
     }
 }

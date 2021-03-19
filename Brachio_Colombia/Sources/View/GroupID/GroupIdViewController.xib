@@ -39,8 +39,8 @@
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClipBoard Copied!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHO-ST-16q">
-                    <rect key="frame" x="138" y="382.5" width="138" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="155.5" y="362.5" width="103" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
@@ -54,7 +54,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RmY-qd-gLE" secondAttribute="trailing" constant="30" id="YoZ-9b-PcE"/>
                 <constraint firstItem="ykx-cU-mH4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="aR7-Ue-AOd"/>
                 <constraint firstItem="RmY-qd-gLE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="b6f-aM-GRH"/>
-                <constraint firstItem="AHO-ST-16q" firstAttribute="top" secondItem="ykx-cU-mH4" secondAttribute="bottom" constant="50" id="l0b-L4-ynL"/>
+                <constraint firstItem="AHO-ST-16q" firstAttribute="top" secondItem="ykx-cU-mH4" secondAttribute="bottom" constant="30" id="l0b-L4-ynL"/>
             </constraints>
             <point key="canvasLocation" x="-65.217391304347828" y="59.598214285714285"/>
         </view>

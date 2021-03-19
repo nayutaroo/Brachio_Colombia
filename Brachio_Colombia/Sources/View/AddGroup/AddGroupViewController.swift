@@ -75,7 +75,6 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
                 case .failure(let error):
                     print(error)
                     return
-
                 }
             }
             self.dismiss(animated: true, completion: nil)
