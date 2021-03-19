@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
 
 class GroupIdViewController: UIViewController {
-    @IBOutlet weak var groupIdLabel: UILabel! {
+    @IBOutlet weak var groupIdButton: UIButton! {
         didSet {
-            groupIdLabel.text = groupId
+            groupIdButton.setTitle(groupId, for: .normal)
+            groupIdButton.cornerRadius = 25
+            groupIdButton.shadowOffset = CGSize(width: 3, height: 3)
+            groupIdButton.shadowColor = .black
+            groupIdButton.shadowOpacity = 0.6
         }
     }
     
@@ -24,23 +31,16 @@ class GroupIdViewController: UIViewController {
     }
     
     private let groupId: String
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addBackground(name: "tree")
         
-
-        // Do any additional setup after loading the view.
+        groupIdButton.rx.tap
+            .subscribe(Binder(self) { me, _ in
+                UIPasteboard.general.string = me.groupId
+            })
+            .disposed(by: disposeBag)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
