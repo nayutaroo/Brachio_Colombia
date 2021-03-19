@@ -17,7 +17,7 @@ class JoinGroupViewController: UIViewController {
     @IBOutlet weak var joinButton: UIButton! {
         didSet {
             joinButton.setTitle("join", for: .normal)
-            joinButton.setTitle("グループを作成", for: .normal)
+            joinButton.setTitle("グループに参加", for: .normal)
             joinButton.cornerRadius = 25
             joinButton.shadowOffset = CGSize(width: 3, height: 3)
             joinButton.shadowColor = .black

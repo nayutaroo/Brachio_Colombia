@@ -48,13 +48,14 @@ class LoginViewController: UIViewController {
         passWord = passwordTextField.text!
         
         userRepository.login(email: mailAddress, password: passWord) { [weak self] result in
+            guard let me = self else { return }
             switch result {
             case .success():
                 //画面遷移する
                 let groupListVC = GroupListViewController()
-                self?.navigationController?.pushViewController(groupListVC, animated: true)
+                me.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
             }
         }
         

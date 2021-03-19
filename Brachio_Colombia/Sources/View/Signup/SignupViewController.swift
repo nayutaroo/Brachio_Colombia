@@ -47,14 +47,13 @@ class SignupViewController: UIViewController {
         signupPassWord = signupPassTextField.text!
         
         userRepository.signup(email: signupMailAddress, password: signupPassWord) { [weak self] result in
+            guard let me = self else { return }
             switch result {
             case .success():
-                //画面遷移
-                print("successされてる")
                 let groupListVC = GroupListViewController()
                 self?.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
             }
         }
         

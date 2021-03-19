@@ -22,10 +22,10 @@ struct DBClient {
                 return
             }
             if let uid = authResult?.user.uid {
+                completion(.success(()))
                 db.document("users/\(uid)").setData(["groupIds": []])
             }
         }
-        completion(.success(()))
     }
     
     func login(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
