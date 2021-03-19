@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProfileViewController" customModule="Brachio_Colombia" customModuleProvider="target">
             <connections>
+                <outlet property="addProfileButton" destination="hlf-2R-408" id="sM1-wi-73v"/>
                 <outlet property="imageButton" destination="4Nh-Lu-8pi" id="KWd-k4-9jd"/>
                 <outlet property="messageTextView" destination="dI3-cQ-rmB" id="jhS-6y-T5a"/>
                 <outlet property="nameTextField" destination="cSe-sD-G63" id="b6K-VQ-lOD"/>
@@ -39,7 +40,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dI3-cQ-rmB">
-                            <rect key="frame" x="18" y="217" width="368" height="480"/>
+                            <rect key="frame" x="18" y="217" width="368" height="510"/>
                             <color key="backgroundColor" red="0.5450980392" green="0.27058823529999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,19 +66,16 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlf-2R-408">
-                            <rect key="frame" x="137" y="718" width="130" height="80"/>
+                            <rect key="frame" x="127" y="748" width="150" height="50"/>
                             <color key="backgroundColor" red="0.5450980392" green="0.27058823529999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="130" id="DLi-b6-crI"/>
-                                <constraint firstAttribute="height" constant="80" id="yiu-s3-9XC"/>
+                                <constraint firstAttribute="width" constant="150" id="DLi-b6-crI"/>
+                                <constraint firstAttribute="height" constant="50" id="yiu-s3-9XC"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                            <state key="normal" title="追加">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="プロフィール追加">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
-                            <connections>
-                                <action selector="addProfile:" destination="-1" eventType="touchUpInside" id="xJr-Ue-mEP"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

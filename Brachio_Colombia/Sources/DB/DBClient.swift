@@ -18,12 +18,10 @@ struct DBClient {
     func singup(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult , error in
             if let error = error {
-                print(error)
                 completion(.failure(error))
                 return
             }
             if let uid = authResult?.user.uid {
-                print(uid)
                 completion(.success(()))
                 db.document("users/\(uid)").setData(["groupIds": []])
             }

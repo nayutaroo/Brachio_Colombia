@@ -10,18 +10,29 @@ import RxSwift
 import RxCocoa
 
 class AddProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     
     //let storage = Storage.storage()
     //ライブラリから取得した画像をボタンに貼り付けるために@IBOutletで宣言
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var addProfileButton: UIButton! {
+        didSet {
+            addProfileButton.cornerRadius = 25
+            addProfileButton.shadowOffset = CGSize(width: 3, height: 3)
+            addProfileButton.shadowColor = .black
+            addProfileButton.shadowOpacity = 0.6
+        }
+    }
     
     private var selectedImage: UIImage?
     private var profile: Profile?
     
     private let profileRepository: ProfileRepository
     private let profilesRelay: BehaviorRelay<[Profile]>
+    
+    private let disposeBag = DisposeBag()
     
     init(profileRepository: ProfileRepository = .init(), profilesRelay: BehaviorRelay<[Profile]>) {
         self.profileRepository = profileRepository
@@ -36,6 +47,12 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSetup()
+        
+        addProfileButton.rx.tap
+            .subscribe(Binder(self) { me, _ in
+                me.addProfile()
+            })
+            .disposed(by: disposeBag)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -65,7 +82,9 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
-    @IBAction func addProfile(_ sender: Any) {
+    
+    
+    private func addProfile() {
         let storage: DBStorage = .shared
         
         guard let name = nameTextField.text,
@@ -74,7 +93,6 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
             print("入力エラー")
             return
         }
-        
         
         storage.uploadImage(image: image) { [weak self] result in
             guard let self = self else { return }
