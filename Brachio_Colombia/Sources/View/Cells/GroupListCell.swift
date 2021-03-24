@@ -9,12 +9,12 @@ import UIKit
 
 final class GroupListCell: UICollectionViewCell {
     
-    @IBOutlet private weak var profileNameLabel: UILabel! {
+    @IBOutlet weak var profileNameLabel: UILabel! {
         didSet {
             profileNameLabel.text = ""
         }
     }
-    @IBOutlet private weak var profileImageView: UIImageView! {
+    @IBOutlet weak var profileImageView: UIImageView! {
         didSet {
             profileImageView.image = UIImage(systemName: "photo")
         }

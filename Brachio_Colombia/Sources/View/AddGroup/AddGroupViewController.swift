@@ -11,13 +11,13 @@ import RxCocoa
 
 final class AddGroupViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    private @IBOutlet weak var groupNameTextField: UITextField! {
+    @IBOutlet private weak var groupNameTextField: UITextField! {
         didSet {
             groupNameTextField.delegate = self
             groupNameTextField.placeholder = "グループ名を入力"
         }
     }
-    private @IBOutlet weak var addGroupButton: UIButton! {
+    @IBOutlet private weak var addGroupButton: UIButton! {
         didSet {
             addGroupButton.setTitle("グループを作成", for: .normal)
             addGroupButton.cornerRadius = 25
@@ -27,7 +27,7 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
             
         }
     }
-    private @IBOutlet weak var groupImageButton: UIButton! {
+    @IBOutlet private weak var groupImageButton: UIButton! {
         didSet {
             groupImageButton.imageView?.contentMode = .scaleAspectFit
             let image = UIImage(systemName: "photo")

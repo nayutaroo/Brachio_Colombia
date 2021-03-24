@@ -10,9 +10,9 @@ import RxSwift
 import RxCocoa
 
 
-class GroupListViewController: UIViewController {
+final class GroupListViewController: UIViewController {
     
-    enum Const {
+    private enum Const {
         static let numberOfItemInLine = 1
     }
     
@@ -22,7 +22,7 @@ class GroupListViewController: UIViewController {
     }
     private let groupRepository = GroupRepository()
     
-    @IBOutlet weak var joinButton: UIButton! {
+    @IBOutlet private weak var joinButton: UIButton! {
         didSet {
             joinButton.cornerRadius = 25
             joinButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -31,7 +31,7 @@ class GroupListViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var collectionView: UICollectionView! {
+    @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
             collectionView.dataSource = self
@@ -71,18 +71,16 @@ class GroupListViewController: UIViewController {
         fetch()
         
         toAddGroupButton.rx.tap.subscribe { [weak self] _ in
-            guard let self = self else { return }
-            let vc = AddGroupViewController(groupsRelay: self.groupsRelay)
-            //vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            guard let me = self else { return }
+            let vc = AddGroupViewController(groupsRelay: me.groupsRelay)
+            me.present(vc, animated: true)
         }
         .disposed(by: disposeBag)
         
         joinButton.rx.tap.subscribe { [weak self] _ in
-            guard let self = self else { return }
-            let vc = JoinGroupViewController(groupsRelay: self.groupsRelay)
-            //vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            guard let me = self else { return }
+            let vc = JoinGroupViewController(groupsRelay: me.groupsRelay)
+            me.present(vc, animated: true)
         }
         .disposed(by: disposeBag)
         
@@ -98,12 +96,13 @@ class GroupListViewController: UIViewController {
     }
     
     private func fetch() {
-        groupRepository.fetch {[weak self] result in
+        groupRepository.fetch { [weak self] result in
+            guard let me = self else { return }
             switch result {
             case .success(let groups):
-                self?.groupsRelay.accept(groups)
+                me.groupsRelay.accept(groups)
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
             }
         }
     }
