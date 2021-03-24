@@ -7,21 +7,18 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+final class SignupViewController: UIViewController {
 
-    @IBOutlet weak var signupMailTextField: UITextField!
-    @IBOutlet weak var signupPassTextField: UITextField! {
+    @IBOutlet private weak var signupMailTextField: UITextField!
+    @IBOutlet private weak var signupPassTextField: UITextField! {
         didSet {
             signupPassTextField.isSecureTextEntry = true
         }
     }
     
-    var signupMailAddress: String = ""
-    var signupPassWord: String = ""
-    
     private let userRepository = UserRepository()
     
-    @IBOutlet weak var forCornerButton: UIButton! {
+    @IBOutlet private weak var forCornerButton: UIButton! {
         didSet {
             forCornerButton.cornerRadius = 25
             forCornerButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -43,11 +40,17 @@ class SignupViewController: UIViewController {
     }
 
 
-    @IBAction func signupButton(_ sender: Any) {
-        signupMailAddress = signupMailTextField.text!
-        signupPassWord = signupPassTextField.text!
+    @IBAction private func signupButton(_ sender: Any) {
+        guard let mailAddress = signupMailTextField.text else {
+            showErrorMessageAlert(with: "メールアドレスを入力してください")
+            return
+        }
+        guard let password = signupPassTextField.text else {
+            showErrorMessageAlert(with: "パスワードを入力してください")
+            return
+        }
         
-        userRepository.signup(email: signupMailAddress, password: signupPassWord) { [weak self] result in
+        userRepository.signup(email: mailAddress, password: password) { [weak self] result in
             guard let me = self else { return }
             switch result {
             case .success():
@@ -60,7 +63,7 @@ class SignupViewController: UIViewController {
         
     }
     
-    @IBAction func toLoginButton(_ sender: Any) {
+    @IBAction private func toLoginButton(_ sender: Any) {
         //ログインボタンへの画面遷移
         self.navigationController?.popViewController(animated: true)
     }

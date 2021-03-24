@@ -17,6 +17,4 @@ struct Profile: Decodable {
                 "message": message,
                 "imageUrl": imageUrl]
     }
-    
-    
 }

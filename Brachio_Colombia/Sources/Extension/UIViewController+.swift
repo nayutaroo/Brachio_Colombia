@@ -22,6 +22,10 @@ extension UIViewController {
         alertController.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
         present(alertController, animated: true)
     }
+    
+    func showErrorMessageAlert(with message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+        present(alertController, animated: true)
+    }
 }
-
-

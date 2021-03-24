@@ -12,19 +12,12 @@ struct Group: Decodable {
     var id: String?
     let name: String
     let imageUrl: String
-//    let profiles: [Profile]
     
     var dictionary: [String: Any] {
-        return ["name": name,
-                "imageUrl": imageUrl,
-//                "profiles": profiles
-        ]
+        return
+            [
+                "name": name,
+                "imageUrl": imageUrl
+            ]
     }
-    
-//    init(name: String, imageUrl: String) {
-//        self.id = id
-//        self.name = name
-//        self.imageUrl = imageUrl
-//        self.profiles = profiles
-//    }
 }

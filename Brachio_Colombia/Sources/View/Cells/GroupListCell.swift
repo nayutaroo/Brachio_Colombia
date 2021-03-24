@@ -7,11 +7,11 @@
 
 import UIKit
 
-class GroupListCell: UICollectionViewCell {
+final class GroupListCell: UICollectionViewCell {
     
     @IBOutlet weak var profileNameLabel: UILabel! {
         didSet {
-            profileNameLabel.text = "hogeNAME"
+            profileNameLabel.text = ""
         }
     }
     @IBOutlet weak var profileImageView: UIImageView! {

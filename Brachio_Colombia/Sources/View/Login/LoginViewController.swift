@@ -7,15 +7,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
-    @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField! {
+    @IBOutlet private weak var mailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField! {
         didSet {
             passwordTextField.isSecureTextEntry = true
         }
     }
-    @IBOutlet weak var forcornerButton: UIButton! {
+    @IBOutlet private weak var forcornerButton: UIButton! {
         didSet {
             forcornerButton.cornerRadius = 25
             forcornerButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -24,10 +24,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    //記入されたメールアドレス，パスワードを格納する変数
-    var mailAddress: String = ""
-    var passWord: String = ""
-    
     private let userRepository = UserRepository()
     
     override func viewDidLoad() {
@@ -35,18 +31,23 @@ class LoginViewController: UIViewController {
         view.addBackground(name: "tree")
         title = "Sign In"
         forcornerButton.layer.cornerRadius = 15.0
-
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    @IBAction func loginButton(_ sender: Any) {
-        mailAddress = mailTextField.text!
-        passWord = passwordTextField.text!
+    @IBAction private func loginButton(_ sender: Any) {
+        guard let mailAddress = mailTextField.text else {
+            showErrorMessageAlert(with: "メールアドレスを入力してください")
+            return
+        }
+        guard let password = passwordTextField.text else {
+            showErrorMessageAlert(with: "パスワードを入力してください")
+            return
+        }
         
-        userRepository.login(email: mailAddress, password: passWord) { [weak self] result in
+        userRepository.login(email: mailAddress, password: password) { [weak self] result in
             guard let me = self else { return }
             switch result {
             case .success():
@@ -58,7 +59,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func signupButton(_ sender: Any) {
+    @IBAction private func signupButton(_ sender: Any) {
         //画面遷移→SignupViewController
         let signupVC = SignupViewController()
         navigationController?.pushViewController(signupVC, animated: true)

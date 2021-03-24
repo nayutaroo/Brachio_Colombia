@@ -9,13 +9,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ProfileListViewController: UIViewController {
+final class ProfileListViewController: UIViewController {
     
-    enum Const {
+    private enum Const {
         static let numberOfItemInLine = 1
     }
     
-    @IBOutlet weak var shareButton: UIButton! {
+    @IBOutlet private weak var shareButton: UIButton! {
         didSet {
             shareButton.cornerRadius = 25
             shareButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -23,7 +23,6 @@ class ProfileListViewController: UIViewController {
             shareButton.shadowOpacity = 0.6
         }
     }
-    
     
     init( profileRepository: ProfileRepository = .init()) {
         self.profileRepository = profileRepository
@@ -35,7 +34,7 @@ class ProfileListViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var addProfileButton: UIButton! {
+    @IBOutlet private weak var addProfileButton: UIButton! {
         didSet {
             addProfileButton.cornerRadius = 25
             addProfileButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -44,7 +43,7 @@ class ProfileListViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var collectionView: UICollectionView! {
+    @IBOutlet private weak var collectionView: UICollectionView! {
         
         didSet {
             collectionView.delegate = self
@@ -74,9 +73,7 @@ class ProfileListViewController: UIViewController {
     }
     
     private let profileRepository: ProfileRepository
-    
     private let profilesRelay = BehaviorRelay<[Profile]>(value: [])
-    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -87,8 +84,7 @@ class ProfileListViewController: UIViewController {
         shareButton.rx.tap
             .bind(to: Binder(self) { me, _ in
                 guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String else {
-                    print("group取得エラー")
-                    return
+                    fatalError("グループIDが取得できませんでした")
                 }
                 let vc = GroupIdViewController(groupId: groupId)
                 me.present(vc, animated: true)
@@ -105,41 +101,37 @@ class ProfileListViewController: UIViewController {
         
         profilesRelay.asDriver()
             .drive( Binder(self) { me, _ in
-                print("更新")
                 me.collectionView.reloadData()
             })
             .disposed(by: disposeBag)
     }
+    
     private func viewSetup() {
         title = "Members"
         view.addBackground(name: "tree")
     }
 
-    
     private func fetch() {
         guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String else {
-            print("group取得エラー")
-            return
+            fatalError("グループIDが取得できませんでした")
         }
         
         profileRepository.fetch(groupId: groupId) { [weak self] result in
-            guard let self = self else { return }
+            guard let me = self else { return }
             switch result {
             case .success(let profiles):
                 print(profiles)
-                self.profilesRelay.accept(profiles)
+                me.profilesRelay.accept(profiles)
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
             }
         }
     }
-    
 }
 
 extension ProfileListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailViewController(profile: profilesRelay.value[indexPath.row])
-        print(indexPath)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -154,6 +146,4 @@ extension ProfileListViewController: UICollectionViewDataSource {
         cell.configure(with: profilesRelay.value[indexPath.row])
         return cell
     }
-    
-    
 }

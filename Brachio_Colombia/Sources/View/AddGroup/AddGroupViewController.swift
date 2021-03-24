@@ -11,13 +11,13 @@ import RxCocoa
 
 final class AddGroupViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var groupNameTextField: UITextField! {
+    @IBOutlet private weak var groupNameTextField: UITextField! {
         didSet {
             groupNameTextField.delegate = self
             groupNameTextField.placeholder = "グループ名を入力"
         }
     }
-    @IBOutlet weak var addGroupButton: UIButton! {
+    @IBOutlet private weak var addGroupButton: UIButton! {
         didSet {
             addGroupButton.setTitle("グループを作成", for: .normal)
             addGroupButton.cornerRadius = 25
@@ -27,7 +27,7 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
             
         }
     }
-    @IBOutlet weak var groupImageButton: UIButton! {
+    @IBOutlet private weak var groupImageButton: UIButton! {
         didSet {
             groupImageButton.imageView?.contentMode = .scaleAspectFit
             let image = UIImage(systemName: "photo")
@@ -59,13 +59,17 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
         addGroupButton.rx.tap.subscribe { [weak self] _ in
             // TODO: グループ追加のPOST
             let storage: DBStorage = .shared
-            guard let self = self else { return }
-            guard let name = self.groupNameTextField.text,
-                  let image = self.groupImage
-            else {
-                print("error")
+            guard let me = self else { return }
+            
+            guard let image = me.groupImage else {
+                me.showErrorMessageAlert(with: "画像が選択されていません")
                 return
             }
+            guard let name = me.groupNameTextField.text else {
+                me.showErrorMessageAlert(with: "グループ名が入力されていません")
+                return
+            }
+            
             storage.uploadImage(image: image) { [weak self] result in
                 guard let me = self else { return }
                 switch result {
@@ -73,26 +77,25 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
                     me.group = Group(id: nil, name: name, imageUrl: imageUrl)
                     me.groupCreate()
                 case .failure(let error):
-                    print(error)
+                    me.showErrorAlert(with: error)
                     return
                 }
             }
-            self.dismiss(animated: true, completion: nil)
+            me.dismiss(animated: true, completion: nil)
         }
         .disposed(by: disposeBag)
         
         groupNameTextField.rx.controlEvent(.editingDidEndOnExit).asDriver()
-            .drive( Binder(self) { me, _ in
+            .drive(Binder(self) { me, _ in
                 me.groupNameTextField.resignFirstResponder()
             })
             .disposed(by: disposeBag)
         
         
         groupImageButton.rx.tap
-            .subscribe({ [weak self] _ in
+            .subscribe(Binder(self) { me, _ in
                 let picker = UIImagePickerController()
                 let sourceType: UIImagePickerController.SourceType = UIImagePickerController.SourceType.photoLibrary
-                guard let me = self else { return }
                 if UIImagePickerController.isSourceTypeAvailable(sourceType) {
                     picker.sourceType = sourceType
                     picker.delegate = me
@@ -111,13 +114,13 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
     
     func groupCreate() {
         guard let group = group else { return }
-        groupRepository.create(group: group)  { [weak self] result in
+        groupRepository.create(group: group) { [weak self] result in
             guard let me = self else { return }
             switch result {
             case .success(let group):
                 me.groupsRelay.accept(me.groupsRelay.value + [group])
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
                 return
             }
         }

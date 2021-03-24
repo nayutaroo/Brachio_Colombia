@@ -8,8 +8,8 @@
 import Foundation
  
 struct GroupRepository {
+    private let dbClient = DBClient.shared
     
-    internal let dbClient = DBClient.shared
     func fetch(completion: @escaping (Result<[Group],Error>) -> Void) {
         dbClient.getGroups(completion: completion)
     }

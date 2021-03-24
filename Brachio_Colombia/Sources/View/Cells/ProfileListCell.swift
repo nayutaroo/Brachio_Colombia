@@ -8,22 +8,14 @@
 import UIKit
 import Nuke
 
-class ProfileListCell: UICollectionViewCell {
+final class ProfileListCell: UICollectionViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var iconImageView: UIImageView! {
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var iconImageView: UIImageView! {
         didSet {
             iconImageView.contentMode = .scaleAspectFill
             iconImageView.layer.cornerRadius = 10
         }
-    }
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func prepareForReuse() {
     }
 
     func configure(with profile: Profile) {
