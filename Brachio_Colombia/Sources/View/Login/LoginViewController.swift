@@ -42,12 +42,12 @@ final class LoginViewController: UIViewController {
             showErrorMessageAlert(with: "メールアドレスを入力してください")
             return
         }
-        guard let passWord = passwordTextField.text else {
+        guard let password = passwordTextField.text else {
             showErrorMessageAlert(with: "パスワードを入力してください")
             return
         }
         
-        userRepository.login(email: mailAddress, password: passWord) { [weak self] result in
+        userRepository.login(email: mailAddress, password: password) { [weak self] result in
             guard let me = self else { return }
             switch result {
             case .success():
