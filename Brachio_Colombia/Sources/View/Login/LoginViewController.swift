@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
             forcornerButton.shadowColor = .black
             forcornerButton.shadowOpacity = 0.6
         }
-        
     }
     
     //記入されたメールアドレス，パスワードを格納する変数
@@ -51,16 +50,14 @@ class LoginViewController: UIViewController {
             guard let me = self else { return }
             switch result {
             case .success():
-                //画面遷移する
                 let groupListVC = GroupListViewController()
                 me.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
                 me.showErrorAlert(with: error)
             }
         }
-        
-        
     }
+    
     @IBAction func signupButton(_ sender: Any) {
         //画面遷移→SignupViewController
         let signupVC = SignupViewController()

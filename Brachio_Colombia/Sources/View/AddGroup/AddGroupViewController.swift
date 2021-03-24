@@ -63,15 +63,15 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
             guard let name = self.groupNameTextField.text,
                   let image = self.groupImage
             else {
-                print("errrpr")
+                print("error")
                 return
             }
             storage.uploadImage(image: image) { [weak self] result in
-                guard let self = self else { return }
+                guard let me = self else { return }
                 switch result {
                 case .success(let imageUrl):
-                    self.group = Group(id: nil, name: name, imageUrl: imageUrl)
-                    self.groupCreate()
+                    me.group = Group(id: nil, name: name, imageUrl: imageUrl)
+                    me.groupCreate()
                 case .failure(let error):
                     print(error)
                     return
@@ -82,8 +82,8 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
         .disposed(by: disposeBag)
         
         groupNameTextField.rx.controlEvent(.editingDidEndOnExit).asDriver()
-            .drive(onNext: { _ in
-                self.groupNameTextField.resignFirstResponder()
+            .drive( Binder(self) { me, _ in
+                me.groupNameTextField.resignFirstResponder()
             })
             .disposed(by: disposeBag)
         
@@ -92,12 +92,12 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
             .subscribe({ [weak self] _ in
                 let picker = UIImagePickerController()
                 let sourceType: UIImagePickerController.SourceType = UIImagePickerController.SourceType.photoLibrary
-                guard let self = self else { return }
+                guard let me = self else { return }
                 if UIImagePickerController.isSourceTypeAvailable(sourceType) {
                     picker.sourceType = sourceType
-                    picker.delegate = self
+                    picker.delegate = me
                     picker.allowsEditing = true
-                    self.present(picker, animated: true, completion: nil)
+                    me.present(picker, animated: true, completion: nil)
                 }
             })
             .disposed(by: disposeBag)
@@ -112,10 +112,10 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
     func groupCreate() {
         guard let group = group else { return }
         groupRepository.create(group: group)  { [weak self] result in
-            guard let self = self else { return }
+            guard let me = self else { return }
             switch result {
             case .success(let group):
-                self.groupsRelay.accept(self.groupsRelay.value + [group])
+                me.groupsRelay.accept(me.groupsRelay.value + [group])
             case .failure(let error):
                 print(error)
                 return

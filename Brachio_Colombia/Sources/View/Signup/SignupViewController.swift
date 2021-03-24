@@ -15,6 +15,7 @@ class SignupViewController: UIViewController {
             signupPassTextField.isSecureTextEntry = true
         }
     }
+    
     var signupMailAddress: String = ""
     var signupPassWord: String = ""
     
