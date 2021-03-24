@@ -7,14 +7,14 @@
 
 import UIKit
 
-class GroupListCell: UICollectionViewCell {
+final class GroupListCell: UICollectionViewCell {
     
-    @IBOutlet weak var profileNameLabel: UILabel! {
+    @IBOutlet private weak var profileNameLabel: UILabel! {
         didSet {
             profileNameLabel.text = ""
         }
     }
-    @IBOutlet weak var profileImageView: UIImageView! {
+    @IBOutlet private weak var profileImageView: UIImageView! {
         didSet {
             profileImageView.image = UIImage(systemName: "photo")
         }

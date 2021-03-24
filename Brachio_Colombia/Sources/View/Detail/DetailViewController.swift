@@ -7,22 +7,22 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
 
     private let profile: Profile
-    @IBOutlet weak var nameLabel: UILabel! {
+    @IBOutlet private weak var nameLabel: UILabel! {
         didSet {
             nameLabel.text = profile.name
         }
     }
     
-    @IBOutlet weak var messageLabel: UILabel! {
+    @IBOutlet private weak var messageLabel: UILabel! {
         didSet {
             messageLabel.text = profile.message
         }
     }
     
-    @IBOutlet weak var imageView: UIImageView! {
+    @IBOutlet private weak var imageView: UIImageView! {
         didSet {
             imageView.contentMode = .scaleAspectFill
             imageView.layer.cornerRadius = 10

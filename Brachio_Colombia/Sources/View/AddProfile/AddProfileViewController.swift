@@ -9,15 +9,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class AddProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+final class AddProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    
-    //let storage = Storage.storage()
     //ライブラリから取得した画像をボタンに貼り付けるために@IBOutletで宣言
-    @IBOutlet weak var imageButton: UIButton!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var messageTextView: UITextView!
-    @IBOutlet weak var addProfileButton: UIButton! {
+    @IBOutlet private weak var imageButton: UIButton!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var messageTextView: UITextView!
+    @IBOutlet private weak var addProfileButton: UIButton! {
         didSet {
             addProfileButton.cornerRadius = 25
             addProfileButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -70,7 +68,7 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
         dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func addPhotoButton(_ sender: Any) {
+    @IBAction private func addPhotoButton(_ sender: Any) {
         //ライブラリにアクセス
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let picker = UIImagePickerController()
