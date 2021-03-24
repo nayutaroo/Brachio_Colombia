@@ -17,14 +17,6 @@ class ProfileListCell: UICollectionViewCell {
             iconImageView.layer.cornerRadius = 10
         }
     }
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func prepareForReuse() {
-    }
 
     func configure(with profile: Profile) {
         nameLabel.text = profile.name
