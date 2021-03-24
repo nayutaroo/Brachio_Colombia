@@ -9,14 +9,11 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class JoinGroupViewController: UIViewController {
+final class JoinGroupViewController: UIViewController {
 
-    @IBOutlet weak var groupIdTextField: UITextField!
-    
-    
-    @IBOutlet weak var joinButton: UIButton! {
+    @IBOutlet private weak var groupIdTextField: UITextField!
+    @IBOutlet private weak var joinButton: UIButton! {
         didSet {
-            joinButton.setTitle("join", for: .normal)
             joinButton.setTitle("グループに参加", for: .normal)
             joinButton.cornerRadius = 25
             joinButton.shadowOffset = CGSize(width: 3, height: 3)
@@ -52,16 +49,17 @@ class JoinGroupViewController: UIViewController {
     
     private func join() {
         guard let groupId = groupIdTextField.text else {
+            showErrorMessageAlert(with: "グループIDを入力してください")
             return
         }
         
         groupRepository.join(groupId: groupId) {[weak self] result in
-            guard let self = self else { return }
+            guard let me = self else { return }
             switch result {
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
             case .success(let group):
-                self.groupsRelay.accept(self.groupsRelay.value + [group])
+                me.groupsRelay.accept(me.groupsRelay.value + [group])
             }
         }
     }
