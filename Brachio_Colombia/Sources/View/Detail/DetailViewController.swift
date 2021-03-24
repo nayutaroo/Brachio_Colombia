@@ -27,9 +27,6 @@ class DetailViewController: UIViewController {
             imageView.contentMode = .scaleAspectFill
             imageView.layer.cornerRadius = 10
             imageView.loadImage(from: profile.imageUrl)
-//            imageView.layer.shadowColor = CGColor.init(red: 0, green: 0, blue: 0, alpha: 1)
-//            imageView.layer.shadowOpacity = 0.6
-//            imageView.layer.shadowOffset = CGSize(width: 0, height: 3)
         }
     }
     
