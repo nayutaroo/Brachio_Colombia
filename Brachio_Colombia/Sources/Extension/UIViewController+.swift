@@ -28,8 +28,4 @@ extension UIViewController {
         alertController.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
         present(alertController, animated: true)
     }
-
-    
 }
-
-
