@@ -126,7 +126,7 @@ struct DBClient {
             completion(.success(groups))
             return nil
             
-        }, completion: { (_, error)  in
+        }, completion: { (_, error) in
             if let error = error {
                 completion(.failure(error))
                 return
