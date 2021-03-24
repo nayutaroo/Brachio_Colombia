@@ -56,7 +56,7 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     private func viewSetup() {
@@ -87,42 +87,46 @@ class AddProfileViewController: UIViewController, UIImagePickerControllerDelegat
     private func addProfile() {
         let storage: DBStorage = .shared
         
-        guard let name = nameTextField.text,
-              let message = messageTextView.text,
-              let image = selectedImage else {
-            print("入力エラー")
+        guard let name = nameTextField.text else {
+            showErrorMessageAlert(with: "名前を入力してください")
+            return
+        }
+        guard let message = messageTextView.text else {
+            showErrorMessageAlert(with: "メッセージを入力してください")
+            return
+        }
+        guard let image = selectedImage else {
+            showErrorMessageAlert(with: "画像を選択してください")
             return
         }
         
         storage.uploadImage(image: image) { [weak self] result in
-            guard let self = self else { return }
+            guard let me = self else { return }
             switch result {
             case .success(let imageUrl):
-                self.profile = Profile(name: name, message: message, imageUrl: imageUrl)
-                self.profileCreate()
+                me.profile = Profile(name: name, message: message, imageUrl: imageUrl)
+                me.profileCreate()
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
                 return
             }
         }
     }
     
     private func profileCreate() {
-        
         guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String,
-              let profile = self.profile else {
-            print("group取得エラー")
-            return
+              let profile = profile else {
+            fatalError("GroupIDが取得できません")
         }
         
         profileRepository.create(groupId: groupId, profile: profile) { [weak self] result in
-            guard let self = self else { return }
+            guard let me = self else { return }
             switch result {
             case .failure(let error):
-                print(error)
+                me.showErrorAlert(with: error)
                 return
             case .success():
-                self.profilesRelay.accept(self.profilesRelay.value + [profile])
+                me.profilesRelay.accept(me.profilesRelay.value + [profile])
             }
         }
         dismiss(animated: true, completion: nil)
