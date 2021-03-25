@@ -65,7 +65,7 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
                 me.showErrorMessageAlert(with: "画像が選択されていません")
                 return
             }
-            guard let name = me.groupNameTextField.text else {
+            guard let name = me.groupNameTextField.text, !name.isEmpty else {
                 me.showErrorMessageAlert(with: "グループ名が入力されていません")
                 return
             }
@@ -90,7 +90,6 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
                 me.groupNameTextField.resignFirstResponder()
             })
             .disposed(by: disposeBag)
-        
         
         groupImageButton.rx.tap
             .subscribe(Binder(self) { me, _ in

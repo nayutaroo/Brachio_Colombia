@@ -38,11 +38,11 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction private func loginButton(_ sender: Any) {
-        guard let mailAddress = mailTextField.text else {
+        guard let mailAddress = mailTextField.text, !mailAddress.isEmpty else {
             showErrorMessageAlert(with: "メールアドレスを入力してください")
             return
         }
-        guard let password = passwordTextField.text else {
+        guard let password = passwordTextField.text, !password.isEmpty else {
             showErrorMessageAlert(with: "パスワードを入力してください")
             return
         }

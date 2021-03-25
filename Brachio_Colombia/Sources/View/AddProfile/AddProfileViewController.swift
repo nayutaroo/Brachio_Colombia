@@ -85,16 +85,17 @@ final class AddProfileViewController: UIViewController, UIImagePickerControllerD
     private func addProfile() {
         let storage: DBStorage = .shared
         
-        guard let name = nameTextField.text else {
+        guard let image = selectedImage else {
+            showErrorMessageAlert(with: "画像を選択してください")
+            return
+        }
+        
+        guard let name = nameTextField.text, !name.isEmpty else {
             showErrorMessageAlert(with: "名前を入力してください")
             return
         }
-        guard let message = messageTextView.text else {
+        guard let message = messageTextView.text, !message.isEmpty else {
             showErrorMessageAlert(with: "メッセージを入力してください")
-            return
-        }
-        guard let image = selectedImage else {
-            showErrorMessageAlert(with: "画像を選択してください")
             return
         }
         
@@ -112,9 +113,12 @@ final class AddProfileViewController: UIViewController, UIImagePickerControllerD
     }
     
     private func profileCreate() {
-        guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String,
-              let profile = profile else {
+        guard let groupId = UserDefaults.standard.object(forKey: "groupId") as? String else {
             fatalError("GroupIDが取得できません")
+        }
+        
+        guard let profile = profile else {
+            return
         }
         
         profileRepository.create(groupId: groupId, profile: profile) { [weak self] result in

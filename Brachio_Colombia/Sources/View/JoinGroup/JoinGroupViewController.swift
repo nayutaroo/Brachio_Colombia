@@ -48,12 +48,12 @@ final class JoinGroupViewController: UIViewController {
     }
     
     private func join() {
-        guard let groupId = groupIdTextField.text else {
+        guard let groupId = groupIdTextField.text, !groupId.isEmpty else {
             showErrorMessageAlert(with: "グループIDを入力してください")
             return
         }
         
-        groupRepository.join(groupId: groupId) {[weak self] result in
+        groupRepository.join(groupId: groupId) { [weak self] result in
             guard let me = self else { return }
             switch result {
             case .failure(let error):

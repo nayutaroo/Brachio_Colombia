@@ -41,11 +41,11 @@ final class SignupViewController: UIViewController {
 
 
     @IBAction private func signupButton(_ sender: Any) {
-        guard let mailAddress = signupMailTextField.text else {
+        guard let mailAddress = signupMailTextField.text, !mailAddress.isEmpty else {
             showErrorMessageAlert(with: "メールアドレスを入力してください")
             return
         }
-        guard let password = signupPassTextField.text else {
+        guard let password = signupPassTextField.text, !password.isEmpty else {
             showErrorMessageAlert(with: "パスワードを入力してください")
             return
         }
