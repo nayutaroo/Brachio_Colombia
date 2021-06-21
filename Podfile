@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '14.0'
 
 target 'Brachio_Colombia' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,12 +7,12 @@ target 'Brachio_Colombia' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'FirebaseFirestoreSwift'
-  pod 'Nuke' 
+  pod 'Nuke'
+
   target 'Brachio_ColombiaTests' do
     inherit! :search_paths
     # Pods for testing

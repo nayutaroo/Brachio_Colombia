@@ -78,10 +78,8 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
                     me.groupCreate()
                 case .failure(let error):
                     me.showErrorAlert(with: error)
-                    return
                 }
             }
-            me.dismiss(animated: true, completion: nil)
         }
         .disposed(by: disposeBag)
         
@@ -118,6 +116,7 @@ final class AddGroupViewController: UIViewController, UIImagePickerControllerDel
             switch result {
             case .success(let group):
                 me.groupsRelay.accept(me.groupsRelay.value + [group])
+                me.dismiss(animated: true, completion: nil)
             case .failure(let error):
                 me.showErrorAlert(with: error)
                 return
