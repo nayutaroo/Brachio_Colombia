@@ -54,13 +54,15 @@ final class SignupViewController: UIViewController {
             guard let me = self else { return }
             switch result {
             case .success():
+                UserDefaults.standard.set(mailAddress, forKey: "email")
+                UserDefaults.standard.set(password, forKey: "password")
+
                 let groupListVC = GroupListViewController()
                 self?.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
                 me.showErrorAlert(with: error)
             }
         }
-        
     }
     
     @IBAction private func toLoginButton(_ sender: Any) {

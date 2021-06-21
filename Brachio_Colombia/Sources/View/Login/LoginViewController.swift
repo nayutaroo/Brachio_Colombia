@@ -28,9 +28,21 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSetup()
+    }
+
+    private func viewSetup() {
         view.addBackground(name: "tree")
         title = "Sign In"
         forcornerButton.layer.cornerRadius = 15.0
+
+        if let email = UserDefaults.standard.object(forKey: "email") as? String {
+            mailTextField.text = email
+        }
+
+        if let password = UserDefaults.standard.object(forKey: "password") as? String {
+            passwordTextField.text = password
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -51,6 +63,9 @@ final class LoginViewController: UIViewController {
             guard let me = self else { return }
             switch result {
             case .success():
+                UserDefaults.standard.set(mailAddress, forKey: "email")
+                UserDefaults.standard.set(password, forKey: "password")
+
                 let groupListVC = GroupListViewController()
                 me.navigationController?.pushViewController(groupListVC, animated: true)
             case .failure(let error):
